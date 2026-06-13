@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "title": "Nelson Daza — Abogado Migratorio | Santa Marta, Colombia",
+    "description": "Asesoría migratoria profesional para extranjeros en Colombia. Visas, residencia, inversión y nacionalidad colombiana."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "pricing": "Tarifas",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "cta": "Consulta"
+  },
+  "lang": {
+    "es": "ES",
+    "en": "EN",
+    "ru": "RU"
+  },
+  "hero": {
+    "eyebrow": "Asesor Migratorio · Santa Marta, Colombia",
+    "title1": "Vivir, Invertir",
+    "title2": "y ",
+    "titleEm": "Crecer",
+    "title3": " en Colombia",
+    "sub": "Nelson Daza te guía en cada paso de tu proceso migratorio — visas, residencia, inversión y nacionalidad colombiana. Atención presencial y remota en todo el mundo.",
+    "ctaPrimary": "Reservar Consulta — $50 USD",
+    "ctaSecondary": "Ver Servicios",
+    "stat1Num": "+5",
+    "stat1Label": "Años de práctica",
+    "stat2Num": "3",
+    "stat2Label": "Idiomas",
+    "stat3Num": "100%",
+    "stat3Label": "Personalizado"
+  },
+  "banner1": {
+    "label": "Justicia · Migración · Confianza",
+    "title": "Tu camino legal hacia\nuna nueva vida en Colombia",
+    "sub": "Cada proceso migratorio merece respaldo profesional, transparencia y resultados. Así trabajamos contigo, paso a paso.",
+    "stat1Num": "+5",
+    "stat1Label": "Años",
+    "stat2Num": "3",
+    "stat2Label": "Idiomas",
+    "stat3Num": "100%",
+    "stat3Label": "Confidencial"
+  },
+  "about": {
+    "label": "Sobre Nelson Daza",
+    "title": "Formación internacional,\nenfoque local",
+    "p1": "Nelson Daza es un profesional colombiano especializado en asuntos internacionales, documentación legal y procesos migratorios para extranjeros que desean vivir, invertir, trabajar o establecer negocios en Colombia.",
+    "p2": "Cuenta con formación jurídica internacional obtenida en la Universidad RUDN Patrice Lumumba de Moscú, una de las universidades más reconocidas de Europa Oriental en relaciones internacionales y derecho. Su misión: facilitar la integración legal y migratoria de extranjeros en Colombia mediante una asesoría clara, profesional y personalizada.",
+    "edu": [
+      { "icon": "🎓", "title": "Maestría en Derecho Internacional Público", "subtitle": "Universidad RUDN · Moscú, Rusia" },
+      { "icon": "⚖️", "title": "Pregrado en Derecho", "subtitle": "Universidad RUDN · Moscú, Rusia" },
+      { "icon": "📜", "title": "Diploma Traductor Oficial RU–ES", "subtitle": "Universidad RUDN · Moscú, Rusia" },
+      { "icon": "🏛️", "title": "Estudios de Derecho", "subtitle": "Universidad del Magdalena · Santa Marta, CO" }
+    ],
+    "langs": [
+      "🇨🇴 Español — Nativo",
+      "🇺🇸 English — Avanzado",
+      "🇷🇺 Русский — Profesional",
+      "🇫🇷 Français — Intermedio"
+    ]
+  },
+  "services": {
+    "label": "Visas y Servicios",
+    "title": "Soluciones migratorias\na tu medida",
+    "items": [
+      { "num": "01", "name": "Visa M — Cónyuge de Colombiano", "desc": "Matrimonio legal con ciudadano colombiano. Incluye carta explicativa, evidencia de relación genuina y soportes de convivencia.", "fee": "USD 1,200 – 1,800" },
+      { "num": "02", "name": "Visa M — Compañero Permanente", "desc": "Unión marital demostrable con colombiano. La evidencia de convivencia es el aspecto más crítico del proceso.", "fee": "USD 1,500 – 2,000" },
+      { "num": "03", "name": "Visa V — Nómada Digital", "desc": "Para quienes trabajan remotamente para empresas extranjeras: programadores, diseñadores, consultores, creadores de contenido.", "fee": "USD 900 – 1,500" },
+      { "num": "04", "name": "Visa M — Pensionado", "desc": "Pensión vitalicia equivalente a 3 salarios mínimos colombianos. Ideal para jubilados de EE.UU., Canadá y Europa.", "fee": "USD 1,000 – 1,800" },
+      { "num": "05", "name": "Visa M — Inversionista Inmobiliario", "desc": "La más atractiva para Santa Marta. Inversión mínima: 350 salarios mínimos (~USD 95,000). Incluye registro Banco de la República.", "fee": "USD 3,000 – 7,500" },
+      { "num": "06", "name": "Residencia Permanente (Visa R)", "desc": "El producto premium. Por acumulación de tiempo, parentesco con colombiano o inversión directa de 650 salarios mínimos.", "fee": "USD 4,000 – 8,000" }
+    ]
+  },
+  "banner2": {
+    "label": "Tu visa, en buenas manos",
+    "title": "Documentación sin complicaciones",
+    "cta": "Ver tarifas y servicios"
+  },
+  "pricing": {
+    "label": "Consulta Obligatoria",
+    "title": "Transparencia en tarifas",
+    "intro": "Toda relación comienza con una consulta estratégica. Conoce tu ruta migratoria antes de comprometerte con cualquier trámite. El valor se descuenta si contratas dentro de 15 días.",
+    "plans": [
+      {
+        "name": "Consulta Estratégica",
+        "desc": "Consulta inicial obligatoria · 45–60 min",
+        "price": "$50",
+        "unit": "USD · Online o presencial",
+        "features": [
+          "Análisis de elegibilidad",
+          "Revisión preliminar de documentos",
+          "Estrategia migratoria personalizada",
+          "Identificación de riesgos",
+          "Recomendación de visa adecuada",
+          "Hoja de ruta completa"
+        ],
+        "note": "✦ Se descuenta del servicio si contratas en 15 días",
+        "cta": "Reservar ahora",
+        "featured": false
+      },
+      {
+        "name": "Visa M / V Completa",
+        "desc": "Tramitación integral de visa",
+        "price": "$900+",
+        "unit": "USD · Según tipo de visa",
+        "badge": "Más solicitado",
+        "features": [
+          "Cónyuge colombiano: $1,200–1,800",
+          "Compañero permanente: $1,500–2,000",
+          "Nómada digital: $900–1,500",
+          "Pensionado: $1,000–1,800",
+          "Empresa (socio): $2,500–5,000",
+          "Gestión completa de documentos"
+        ],
+        "note": "✦ Incluye consulta inicial descontada",
+        "cta": "Consultar caso",
+        "featured": true
+      },
+      {
+        "name": "Residencia & Nacionalidad",
+        "desc": "Producto premium · Visa R",
+        "price": "$4,000+",
+        "unit": "USD · Residencia permanente o ciudadanía",
+        "features": [
+          "Residencia permanente (Visa R): $4,000–8,000",
+          "Nacionalidad colombiana: $4,000–8,000",
+          "Inversionista inmobiliario: $3,000–7,500",
+          "Análisis completo de elegibilidad",
+          "Gestión ante Migración Colombia",
+          "Seguimiento hasta aprobación"
+        ],
+        "note": "✦ Inversión mínima residencia por inversión: ~USD 275,000",
+        "cta": "Consultar",
+        "featured": false
+      }
+    ]
+  },
+  "comp": {
+    "label": "Servicios Complementarios",
+    "title": "Apoyo integral",
+    "items": [
+      { "name": "Registro de Visa", "fee": "USD 250" },
+      { "name": "Cédula de Extranjería", "fee": "USD 350" },
+      { "name": "Renovación de Visa", "fee": "USD 700 – 1,500" },
+      { "name": "Cambio de Categoría", "fee": "USD 1,000 – 2,000" },
+      { "name": "Apertura de Empresa", "fee": "USD 1,500 – 3,500" },
+      { "name": "Registro Inversión Extranjera", "fee": "USD 1,000 – 2,500" },
+      { "name": "Due Diligence Inmobiliario", "fee": "USD 800 – 2,000" },
+      { "name": "Apertura Bancaria Extranjeros", "fee": "USD 500 – 1,500" },
+      { "name": "Traducción Inglés–Español", "fee": "Desde USD 35/página" },
+      { "name": "Traducción Ruso–Español", "fee": "Desde USD 50/página" }
+    ]
+  },
+  "process": {
+    "label": "Cómo trabajamos",
+    "title": "Cuatro pasos hacia tu objetivo",
+    "steps": [
+      { "num": "I", "name": "Consulta Inicial", "desc": "Análisis de tu caso, elegibilidad y estrategia personalizada en 45–60 minutos." },
+      { "num": "II", "name": "Análisis Documental", "desc": "Revisión y preparación de todos los documentos necesarios según tu tipo de visa." },
+      { "num": "III", "name": "Presentación", "desc": "Radicación de la solicitud ante Cancillería o Migración Colombia con seguimiento activo." },
+      { "num": "IV", "name": "Acompañamiento", "desc": "Te guiamos hasta recibir tu visa, cédula de extranjería y más allá." }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonios",
+    "title": "Lo que dicen nuestros clientes"
+  },
+  "banner3": {
+    "label": "Tu nueva vida empieza aquí",
+    "title": "Hablemos de tu caso",
+    "sub": "Agenda tu consulta estratégica y recibe una hoja de ruta clara para tu proceso migratorio en Colombia.",
+    "cta": "Reservar consulta — $50 USD"
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Inicia tu proceso hoy mismo",
+    "introTitle": "Reserva tu consulta",
+    "intro": "Completa el formulario y nos comunicaremos contigo en menos de 24 horas para confirmar fecha, hora y método de pago. Toda la información es estrictamente confidencial.",
+    "details": [
+      { "icon": "📍", "label": "Ubicación", "value": "Santa Marta, Colombia · Atención presencial y remota" },
+      { "icon": "📞", "label": "WhatsApp", "value": "+57 312 7323913" },
+      { "icon": "🌐", "label": "Idiomas de atención", "value": "Español · English · Русский · Français" },
+      { "icon": "🕐", "label": "Horario", "value": "Lun–Vie: 8:00–18:00 (GMT-5)" }
+    ],
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Juan García",
+      "email": "Email",
+      "emailPlaceholder": "juan@email.com",
+      "whatsapp": "WhatsApp",
+      "whatsappPlaceholder": "+1 (555) 000-0000",
+      "nationality": "Nacionalidad",
+      "nationalityPlaceholder": "Estadounidense",
+      "service": "Tipo de visa / Servicio",
+      "servicePlaceholder": "Seleccionar...",
+      "caseLabel": "Cuéntanos tu caso",
+      "casePlaceholder": "Describe brevemente tu situación. Toda la información es estrictamente confidencial.",
+      "submit": "Enviar solicitud",
+      "success": "¡Enviado! Te contactamos en 24h",
+      "privacy": "Al enviar aceptas nuestra política de privacidad. Las consultas se confirman tras el pago.",
+      "options": [
+        "Seleccionar...",
+        "Consulta Estratégica — $50 USD",
+        "Visa M · Cónyuge colombiano",
+        "Visa M · Compañero permanente",
+        "Visa V · Nómada digital",
+        "Visa M · Pensionado",
+        "Visa M · Inversionista inmobiliario",
+        "Visa M · Socio/Propietario empresa",
+        "Residencia Permanente (Visa R)",
+        "Nacionalidad colombiana",
+        "Servicio complementario"
+      ]
+    }
+  },
+  "disclaimer": "⚠️ Aviso legal: Los honorarios publicados corresponden exclusivamente a servicios profesionales y no incluyen tasas gubernamentales, derechos de visa, traducciones oficiales, apostillas, legalizaciones, seguros, impuestos, gastos notariales ni costos de terceros. La aprobación o negación de cualquier visa, residencia o nacionalidad es competencia exclusiva de las autoridades colombianas. Cada caso es único y será evaluado individualmente.",
+  "footer": {
+    "brand": "Asesoría migratoria profesional para extranjeros en Colombia. Presencial en Santa Marta · Remoto en todo el mundo.",
+    "servicesTitle": "Servicios",
+    "infoTitle": "Información",
+    "services": [
+      "Visa M · Cónyuge / Spouse / Супруг",
+      "Visa V · Nómada Digital",
+      "Visa M · Pensionado / Retiree",
+      "Visa M · Inversionista",
+      "Residencia R / Visa R / Виза R",
+      "Nacionalidad / Citizenship / Гражданство"
+    ],
+    "info": [
+      "Nelson Daza",
+      "Tarifas / Pricing / Тарифы",
+      "Proceso / Process / Процесс",
+      "Contacto / Contact / Контакт",
+      "WhatsApp: +57 312 7323913"
+    ],
+    "copyright": "© 2025 Nelson Daza · Santa Marta, Colombia",
+    "privacy": "Privacidad · Privacy · Конфиденциальность"
+  }
+}
