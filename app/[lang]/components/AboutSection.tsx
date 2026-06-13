@@ -1,3 +1,7 @@
+import { GiGraduateCap, GiJusticeStar, GiScrollUnfurled, GiGreekTemple } from "react-icons/gi"
+
+const eduIcons = [<GiGraduateCap key="0" />, <GiJusticeStar key="1" />, <GiScrollUnfurled key="2" />, <GiGreekTemple key="3" />]
+
 export function AboutSection({ dict }: { dict: Record<string, any>; lang: string }) {
   return (
     <section id="about">
@@ -7,7 +11,7 @@ export function AboutSection({ dict }: { dict: Record<string, any>; lang: string
         <div className="about-portrait reveal">
           <div className="portrait-frame">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop"
+              src="/lawyer.png"
               alt="Nelson Daza"
             />
           </div>
@@ -19,7 +23,7 @@ export function AboutSection({ dict }: { dict: Record<string, any>; lang: string
           <div className="edu-grid">
             {dict.about.edu.map((e: any, i: number) => (
               <div className="edu-card" key={i}>
-                <div className="edu-icon">{e.icon}</div>
+                <div className="edu-icon">{eduIcons[i]}</div>
                 <h4>{e.title}</h4>
                 <p>{e.subtitle}</p>
               </div>

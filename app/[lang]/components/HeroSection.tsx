@@ -1,4 +1,4 @@
-export function HeroSection({ dict }: { dict: Record<string, any>; lang: string }) {
+export function HeroSection({ dict }: { dict: Record<string, any> }) {
   return (
     <section className="hero" id="home">
       <div className="hero-left">
@@ -20,10 +20,7 @@ export function HeroSection({ dict }: { dict: Record<string, any>; lang: string 
         </div>
       </div>
       <div className="hero-right">
-        <img
-          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1800&q=80&auto=format&fit=crop"
-          alt="Nelson Daza"
-        />
+        <img src="/lawyer.png" alt="Nelson Daza" className="hero-photo" />
       </div>
     </section>
   )

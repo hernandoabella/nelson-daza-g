@@ -215,6 +215,33 @@
       ]
     }
   },
+  "booking": {
+    "title": "Reservar Consulta Estratégica",
+    "step": "Paso {current} de {total}",
+    "step1Title": "Cuéntanos tu caso",
+    "step1Desc": "Responde estas preguntas para que podamos preparar tu consulta. (Opcional — puedes saltar este paso e ir directo al pago).",
+    "skip": "Saltar cuestionario e ir al pago",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "payTitle": "Pago de Consulta",
+    "payDesc": "El valor de la consulta estratégica es de <strong>$50 USD</strong>. Una vez realizado el pago, podrás agendar tu cita en el calendario.",
+    "payBtn": "Pagar $50 USD — Tarjeta crédito/débito",
+    "payProcessing": "Procesando pago...",
+    "scheduleTitle": "Agenda tu cita",
+    "scheduleDesc": "¡Pago confirmado! Selecciona la fecha y hora que mejor te acomode para tu consulta con Nelson Daza.",
+    "close": "Cerrar",
+    "questions": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "whatsapp": "WhatsApp",
+      "nationality": "Nacionalidad actual",
+      "visaType": "¿Qué tipo de visa te interesa?",
+      "visaOptions": ["No estoy seguro", "Visa M — Cónyuge/Compañero", "Visa V — Nómada Digital", "Visa M — Pensionado", "Visa M — Inversionista", "Visa M — Socio/Empresa", "Residencia Permanente (Visa R)", "Nacionalidad Colombiana", "Otro"],
+      "timeline": "¿Cuándo planeas iniciar el proceso?",
+      "timelineOptions": ["Lo antes posible", "En 1-3 meses", "En 3-6 meses", "Solo estoy explorando opciones"],
+      "message": "Cuéntanos brevemente tu situación (opcional)"
+    }
+  },
   "disclaimer": "⚠️ Aviso legal: Los honorarios publicados corresponden exclusivamente a servicios profesionales y no incluyen tasas gubernamentales, derechos de visa, traducciones oficiales, apostillas, legalizaciones, seguros, impuestos, gastos notariales ni costos de terceros. La aprobación o negación de cualquier visa, residencia o nacionalidad es competencia exclusiva de las autoridades colombianas. Cada caso es único y será evaluado individualmente.",
   "footer": {
     "brand": "Asesoría migratoria profesional para extranjeros en Colombia. Presencial en Santa Marta · Remoto en todo el mundo.",

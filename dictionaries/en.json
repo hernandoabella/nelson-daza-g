@@ -215,6 +215,33 @@
       ]
     }
   },
+  "booking": {
+    "title": "Book Strategic Consultation",
+    "step": "Step {current} of {total}",
+    "step1Title": "Tell us about your case",
+    "step1Desc": "Answer these questions so we can prepare for your consultation. (Optional — you can skip this and go straight to payment).",
+    "skip": "Skip questionnaire and go to payment",
+    "next": "Next",
+    "back": "Back",
+    "payTitle": "Consultation Payment",
+    "payDesc": "The strategic consultation fee is <strong>$50 USD</strong>. Once payment is complete, you can schedule your appointment on the calendar.",
+    "payBtn": "Pay $50 USD — Credit/Debit Card",
+    "payProcessing": "Processing payment...",
+    "scheduleTitle": "Schedule your appointment",
+    "scheduleDesc": "Payment confirmed! Select the date and time that works best for your consultation with Nelson Daza.",
+    "close": "Close",
+    "questions": {
+      "name": "Full name",
+      "email": "Email address",
+      "whatsapp": "WhatsApp",
+      "nationality": "Current nationality",
+      "visaType": "What type of visa are you interested in?",
+      "visaOptions": ["Not sure", "Visa M — Spouse/Partner", "Visa V — Digital Nomad", "Visa M — Retiree/Pensioner", "Visa M — Real Estate Investor", "Visa M — Business Partner", "Permanent Residency (Visa R)", "Colombian Citizenship", "Other"],
+      "timeline": "When do you plan to start the process?",
+      "timelineOptions": ["As soon as possible", "In 1-3 months", "In 3-6 months", "Just exploring options"],
+      "message": "Briefly tell us about your situation (optional)"
+    }
+  },
   "disclaimer": "⚠️ Legal notice: Published fees correspond exclusively to professional services and do not include government fees, visa duties, official translations, apostilles, legalizations, insurance, taxes, notarial expenses or third-party costs. Approval or denial of any visa, residency or nationality is the exclusive competence of Colombian authorities. Each case is unique.",
   "footer": {
     "brand": "Professional immigration advisory for foreigners in Colombia. In-person in Santa Marta · Remote worldwide.",

@@ -2,7 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation"
 
-export function Nav({ dict, lang }: { dict: Record<string, any>; lang: string }) {
+export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
   const router = useRouter()
   const pathname = usePathname()
 
@@ -16,21 +16,15 @@ export function Nav({ dict, lang }: { dict: Record<string, any>; lang: string })
   return (
     <>
       <div className="lang-bar">
-        <button className={`lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}>
-          🇨🇴 {dict.lang.es}
-        </button>
+        <button className={`lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}>ES</button>
         <span className="lang-sep">|</span>
-        <button className={`lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}>
-          🇺🇸 {dict.lang.en}
-        </button>
+        <button className={`lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}>EN</button>
         <span className="lang-sep">|</span>
-        <button className={`lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}>
-          🇷🇺 {dict.lang.ru}
-        </button>
+        <button className={`lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}>RU</button>
       </div>
       <nav id="navbar">
-        <a href={`/${lang}`} className="nav-logo" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <span>Nelson </span><span style={{ color: "var(--gold)" }}>Daza</span>
+        <a href={`/${lang}`} className="nav-logo">
+          <img src="/logo.png" alt="Nelson Daza" className="nav-logo-img" />
         </a>
         <ul className="nav-links">
           <li><a href={`/${lang}#about`}>{dict.nav.about}</a></li>
@@ -39,9 +33,13 @@ export function Nav({ dict, lang }: { dict: Record<string, any>; lang: string })
           <li><a href={`/${lang}#process`}>{dict.nav.process}</a></li>
           <li><a href={`/${lang}#contact`}>{dict.nav.contact}</a></li>
         </ul>
-        <a href={`/${lang}#pricing`} className="nav-cta btn-primary" style={{ padding: "11px 26px", fontSize: "0.68rem" }}>
+        <button
+          className="nav-cta btn-primary"
+          onClick={onBook}
+          style={{ padding: "11px 26px", fontSize: "0.68rem", border: "none", cursor: "pointer" }}
+        >
           {dict.nav.cta}
-        </a>
+        </button>
       </nav>
     </>
   )

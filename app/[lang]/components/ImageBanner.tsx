@@ -1,3 +1,11 @@
+import { GiScales, GiPassport, GiGlobe } from "react-icons/gi"
+
+const iconMap: Record<string, React.ReactNode> = {
+  "⚖️": <GiScales />,
+  "🛂": <GiPassport />,
+  "🌎": <GiGlobe />,
+}
+
 type Props = {
   imgSrc: string
   icon: string
@@ -17,7 +25,9 @@ export function ImageBanner({ imgSrc, icon, label, title, sub, stats, cta, heigh
       </div>
       <div className="img-banner-frame" />
       <div className="img-banner-content">
-        <div className="img-banner-icon">{icon}</div>
+        <div className="img-banner-icon">
+          {iconMap[icon] || icon}
+        </div>
         {label && <div className="section-label">{label}</div>}
         <h2 dangerouslySetInnerHTML={{ __html: title.replace(/\n/g, "<br />") }} />
         {sub && <p>{sub}</p>}

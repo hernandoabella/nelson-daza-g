@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Nav } from "./Nav"
 import { HeroSection } from "./HeroSection"
 import { MarqueeBanner } from "./MarqueeBanner"
@@ -13,8 +13,11 @@ import { ProcessSection } from "./ProcessSection"
 import { ContactSection } from "./ContactSection"
 import { Disclaimer } from "./Disclaimer"
 import { Footer } from "./Footer"
+import { BookingFlow } from "./BookingFlow"
 
 export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: string }) {
+  const [isBookingOpen, setBookingOpen] = useState(false)
+
   useEffect(() => {
     const cursor = document.getElementById("cursor")
     const ring = document.getElementById("cursorRing")
@@ -72,8 +75,8 @@ export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: s
     <>
       <div className="cursor-dot" id="cursor" />
       <div className="cursor-ring" id="cursorRing" />
-      <Nav dict={dict} lang={lang} />
-      <HeroSection dict={dict} lang={lang} />
+      <Nav dict={dict} lang={lang} onBook={() => setBookingOpen(true)} />
+      <HeroSection dict={dict} />
       <MarqueeBanner />
       <ImageBanner
         imgSrc="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1800&q=80&auto=format&fit=crop"
@@ -97,7 +100,7 @@ export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: s
         cta={{ text: dict.banner2.cta, href: "#pricing" }}
         height={360}
       />
-      <PricingSection dict={dict} lang={lang} />
+      <PricingSection dict={dict} lang={lang} onBook={() => setBookingOpen(true)} />
       <CompSection dict={dict} lang={lang} />
       <ProcessSection dict={dict} lang={lang} />
       <ImageBanner
@@ -109,9 +112,11 @@ export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: s
         cta={{ text: dict.banner3.cta, href: "#contact" }}
         height={420}
       />
-      <ContactSection dict={dict} lang={lang} />
+      <ContactSection dict={dict} lang={lang} onBook={() => setBookingOpen(true)} />
       <Disclaimer text={dict.disclaimer} />
-      <Footer dict={dict} lang={lang} />
+      <Footer dict={dict} lang={lang} onBook={() => setBookingOpen(true)} />
+
+      {isBookingOpen && <BookingFlow key="booking" dict={dict} lang={lang} onClose={() => setBookingOpen(false)} />}
     </>
   )
 }

@@ -1,8 +1,11 @@
 "use client"
 
 import { useState } from "react"
+import { FaMapMarkerAlt, FaPhoneAlt, FaGlobeAmericas, FaClock } from "react-icons/fa"
 
-export function ContactSection({ dict }: { dict: Record<string, any>; lang: string }) {
+const contactIcons = [<FaMapMarkerAlt key="0" />, <FaPhoneAlt key="1" />, <FaGlobeAmericas key="2" />, <FaClock key="3" />]
+
+export function ContactSection({ dict, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
   const [btnText, setBtnText] = useState(dict.contact.form.submit)
   const [btnDisabled, setBtnDisabled] = useState(false)
 
@@ -26,7 +29,7 @@ export function ContactSection({ dict }: { dict: Record<string, any>; lang: stri
           <div className="contact-details">
             {dict.contact.details.map((d: any, i: number) => (
               <div className="contact-item" key={i}>
-                <div className="contact-item-icon">{d.icon}</div>
+                <div className="contact-item-icon">{contactIcons[i]}</div>
                 <div className="contact-item-text">
                   <h5>{d.label}</h5>
                   <p>{d.value}</p>
@@ -70,14 +73,23 @@ export function ContactSection({ dict }: { dict: Record<string, any>; lang: stri
             <label className="form-label">{dict.contact.form.caseLabel}</label>
             <textarea className="form-textarea" placeholder={dict.contact.form.casePlaceholder} />
           </div>
-          <button
-            className="btn-primary"
-            style={{ width: "100%", fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px" }}
-            onClick={handleSubmit}
-            disabled={btnDisabled}
-          >
-            {btnText}
-          </button>
+          <div style={{ display: "flex", gap: "10px" }}>
+            <button
+              className="btn-primary"
+              style={{ flex: 1, fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px", border: "none", cursor: "pointer" }}
+              onClick={handleSubmit}
+              disabled={btnDisabled}
+            >
+              {btnText}
+            </button>
+            <button
+              className="btn-ghost"
+              onClick={onBook}
+              style={{ fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px 24px", cursor: "pointer" }}
+            >
+              {dict.nav.cta}
+            </button>
+          </div>
           <p style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.55rem", letterSpacing: "0.06em", color: "var(--gray)", textAlign: "center", marginTop: "12px", lineHeight: "1.6" }}>
             {dict.contact.form.privacy}
           </p>

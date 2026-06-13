@@ -1,4 +1,4 @@
-export function PricingSection({ dict }: { dict: Record<string, any>; lang: string }) {
+export function PricingSection({ dict, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
   return (
     <section id="pricing">
       <div className="pricing-intro">
@@ -21,9 +21,13 @@ export function PricingSection({ dict }: { dict: Record<string, any>; lang: stri
             </ul>
             <div className="price-note">{p.note}</div>
             <br />
-            <a href="#contact" className={p.featured ? "btn-primary" : "btn-ghost"} style={{ display: "block", textAlign: "center" }}>
+            <button
+              className={p.featured ? "btn-primary" : "btn-ghost"}
+              onClick={onBook}
+              style={{ display: "block", textAlign: "center", width: "100%", border: p.featured ? "none" : undefined, cursor: "pointer" }}
+            >
               {p.cta}
-            </a>
+            </button>
           </div>
         ))}
       </div>
