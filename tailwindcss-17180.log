@@ -1,0 +1,45 @@
+2026-06-13T17:39:39.396074Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-06-13T17:39:39.427404Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "G:\\GitHub\\nelson-daza-g", pattern: "**/*", negated: false }
+2026-06-13T17:39:39.674706Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-06-13T17:39:39.674797Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "G:\\GitHub\\nelson-daza-g" }
+2026-06-13T17:39:39.717668Z  INFO discover_sources: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.717728Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.738386Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.770201Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\app\\layout.tsx"
+2026-06-13T17:39:39.770260Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\public\\file.svg"
+2026-06-13T17:39:39.770216Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\postcss.config.mjs"
+2026-06-13T17:39:39.770276Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\tsconfig.json"
+2026-06-13T17:39:39.770278Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\app\\page.tsx"
+2026-06-13T17:39:39.770308Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\public\\window.svg"
+2026-06-13T17:39:39.770223Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\next.config.ts"
+2026-06-13T17:39:39.770302Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\eslint.config.mjs"
+2026-06-13T17:39:39.770309Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\package.json"
+2026-06-13T17:39:39.770288Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\public\\vercel.svg"
+2026-06-13T17:39:39.786193Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\public\\next.svg"
+2026-06-13T17:39:39.791934Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\public\\globe.svg"
+2026-06-13T17:39:39.798606Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\README.md"
+2026-06-13T17:39:39.810137Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\AGENTS.md"
+2026-06-13T17:39:39.814594Z  INFO tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\CLAUDE.md"
+2026-06-13T17:39:39.814749Z  INFO discover_sources: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.814766Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.814772Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.814779Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815238Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815255Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815266Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815269Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-06-13T17:39:39.815408Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "G:\\GitHub\\nelson-daza-g\\app\\globals.css"
+2026-06-13T17:39:39.815417Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815421Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815424Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815508Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815523Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815578Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815798Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815867Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.815877Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.815971Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.816080Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.816088Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: enter
+2026-06-13T17:39:39.816092Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: exit
+2026-06-13T17:39:39.818923Z  INFO get_globs: tailwindcss_oxide::scanner: exit
