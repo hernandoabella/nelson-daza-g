@@ -383,9 +383,18 @@ export function EvaluationForm({
     return true
   }
 
-  const handleNext = () => {
-    if (step < total - 1) setStep(step + 1)
-    else onComplete(f)
+  const handleNext = async () => {
+    if (step < total - 1) { setStep(step + 1); return }
+    try {
+      await fetch("/api/evaluation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(f),
+      })
+    } catch {
+      // fallo silencioso — no bloquear al usuario
+    }
+    onComplete(f)
   }
 
   return (

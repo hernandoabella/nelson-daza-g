@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, FormEvent } from "react"
 import { FaMapMarkerAlt, FaPhoneAlt, FaGlobeAmericas, FaClock } from "react-icons/fa"
 
 const contactIcons = [<FaMapMarkerAlt key="0" />, <FaPhoneAlt key="1" />, <FaGlobeAmericas key="2" />, <FaClock key="3" />]
@@ -8,14 +8,28 @@ const contactIcons = [<FaMapMarkerAlt key="0" />, <FaPhoneAlt key="1" />, <FaGlo
 export function ContactSection({ dict, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
   const [btnText, setBtnText] = useState(dict.contact.form.submit)
   const [btnDisabled, setBtnDisabled] = useState(false)
+  const [form, setForm] = useState({ name: "", email: "", whatsapp: "", nationality: "", service: "", message: "" })
 
-  const handleSubmit = () => {
-    setBtnText(dict.contact.form.success)
+  const update = (field: string, value: string) => setForm((prev) => ({ ...prev, [field]: value }))
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+    if (!form.name || !form.email) return
     setBtnDisabled(true)
-    setTimeout(() => {
-      setBtnText(dict.contact.form.submit)
+    setBtnText("Enviando...")
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      })
+      setBtnText(dict.contact.form.success)
+      setForm({ name: "", email: "", whatsapp: "", nationality: "", service: "", message: "" })
+    } catch {
+      setBtnText("Error — intenta de nuevo")
       setBtnDisabled(false)
-    }, 3500)
+    }
+    setTimeout(() => { setBtnText(dict.contact.form.submit); setBtnDisabled(false) }, 3000)
   }
 
   return (
@@ -38,30 +52,30 @@ export function ContactSection({ dict, onBook }: { dict: Record<string, any>; la
             ))}
           </div>
         </div>
-        <div className="contact-form reveal">
+        <form className="contact-form reveal" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group">
               <label className="form-label">{dict.contact.form.name}</label>
-              <input type="text" className="form-input" placeholder={dict.contact.form.namePlaceholder} />
+              <input type="text" className="form-input" placeholder={dict.contact.form.namePlaceholder} value={form.name} onChange={e => update("name", e.target.value)} required />
             </div>
             <div className="form-group">
               <label className="form-label">{dict.contact.form.email}</label>
-              <input type="email" className="form-input" placeholder={dict.contact.form.emailPlaceholder} />
+              <input type="email" className="form-input" placeholder={dict.contact.form.emailPlaceholder} value={form.email} onChange={e => update("email", e.target.value)} required />
             </div>
           </div>
           <div className="form-row">
             <div className="form-group">
               <label className="form-label">{dict.contact.form.whatsapp}</label>
-              <input type="tel" className="form-input" placeholder={dict.contact.form.whatsappPlaceholder} />
+              <input type="tel" className="form-input" placeholder={dict.contact.form.whatsappPlaceholder} value={form.whatsapp} onChange={e => update("whatsapp", e.target.value)} />
             </div>
             <div className="form-group">
               <label className="form-label">{dict.contact.form.nationality}</label>
-              <input type="text" className="form-input" placeholder={dict.contact.form.nationalityPlaceholder} />
+              <input type="text" className="form-input" placeholder={dict.contact.form.nationalityPlaceholder} value={form.nationality} onChange={e => update("nationality", e.target.value)} />
             </div>
           </div>
           <div className="form-group">
             <label className="form-label">{dict.contact.form.service}</label>
-            <select className="form-select">
+            <select className="form-select" value={form.service} onChange={e => update("service", e.target.value)}>
               {dict.contact.form.options.map((o: string, i: number) => (
                 <option key={i} value={o === dict.contact.form.servicePlaceholder ? "" : o}>
                   {o}
@@ -71,13 +85,13 @@ export function ContactSection({ dict, onBook }: { dict: Record<string, any>; la
           </div>
           <div className="form-group">
             <label className="form-label">{dict.contact.form.caseLabel}</label>
-            <textarea className="form-textarea" placeholder={dict.contact.form.casePlaceholder} />
+            <textarea className="form-textarea" placeholder={dict.contact.form.casePlaceholder} value={form.message} onChange={e => update("message", e.target.value)} />
           </div>
           <div style={{ display: "flex", gap: "10px" }}>
             <button
               className="btn-primary"
-              style={{ flex: 1, fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px", border: "none", cursor: "pointer" }}
-              onClick={handleSubmit}
+              style={{ flex: 1, fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px", border: "none", cursor: btnDisabled ? "default" : "pointer" }}
+              type="submit"
               disabled={btnDisabled}
             >
               {btnText}
@@ -85,6 +99,7 @@ export function ContactSection({ dict, onBook }: { dict: Record<string, any>; la
             <button
               className="btn-ghost"
               onClick={onBook}
+              type="button"
               style={{ fontSize: "0.7rem", letterSpacing: "0.12em", padding: "16px 24px", cursor: "pointer" }}
             >
               {dict.nav.cta}
@@ -93,7 +108,7 @@ export function ContactSection({ dict, onBook }: { dict: Record<string, any>; la
           <p style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.55rem", letterSpacing: "0.06em", color: "var(--gray)", textAlign: "center", marginTop: "12px", lineHeight: "1.6" }}>
             {dict.contact.form.privacy}
           </p>
-        </div>
+        </form>
       </div>
     </section>
   )

@@ -1,9 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { FaTimes, FaCheck } from "react-icons/fa"
 import { CALENDLY_FREE, CALENDLY_PAID } from "@/lib/config"
 import { ParticleBackground } from "./ParticleBackground"
+
+declare global {
+  interface Window { Calendly?: any }
+}
 
 type BookingFlowProps = {
   dict: Record<string, any>
@@ -13,6 +17,7 @@ type BookingFlowProps = {
 
 export function BookingFlow({ dict, onClose }: BookingFlowProps) {
   const [selected, setSelected] = useState<"free" | "paid" | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
   const opts = dict.bookingOptions
 
   useEffect(() => {
@@ -20,7 +25,35 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
     return () => { document.body.style.overflow = "" }
   }, [])
 
-  const calendlyUrl = selected === "free" ? CALENDLY_FREE : CALENDLY_PAID
+  useEffect(() => {
+    if (!selected || !containerRef.current) return
+
+    const el = containerRef.current
+    el.innerHTML = ""
+    const url = selected === "free" ? CALENDLY_FREE : CALENDLY_PAID
+
+    const init = () => {
+      if (window.Calendly) {
+        window.Calendly.initInlineWidget({
+          url,
+          parentElement: el,
+        })
+      }
+    }
+
+    if (window.Calendly) {
+      init()
+    } else {
+      // Esperar a que cargue widget.js
+      const check = setInterval(() => {
+        if (window.Calendly) {
+          clearInterval(check)
+          init()
+        }
+      }, 200)
+      return () => clearInterval(check)
+    }
+  }, [selected])
 
   return (
     <div
@@ -61,7 +94,6 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
         <div style={{ padding: "20px 28px 28px" }}>
           {!selected ? (
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-              {/* Free card */}
               <div
                 onClick={() => setSelected("free")}
                 style={{
@@ -93,7 +125,6 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
                 </button>
               </div>
 
-              {/* Paid card */}
               <div
                 onClick={() => setSelected("paid")}
                 style={{
@@ -130,11 +161,7 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
               <p style={{ fontSize: "0.95rem", color: "var(--ink3)", lineHeight: 1.7, maxWidth: "480px", margin: "0 auto 20px" }}
                 dangerouslySetInnerHTML={{ __html: selected === "free" ? opts.freeCalDesc : opts.paidCalDesc }}
               />
-              <div
-                className="calendly-inline-widget"
-                data-url={calendlyUrl}
-                style={{ minWidth: "320px", height: "580px", borderRadius: "8px", overflow: "hidden" }}
-              />
+              <div ref={containerRef} style={{ minWidth: "320px", height: "580px", borderRadius: "8px", overflow: "hidden" }} />
             </div>
           )}
         </div>
