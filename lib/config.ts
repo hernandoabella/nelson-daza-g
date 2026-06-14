@@ -1,6 +1,3 @@
-// Stripe — Crea un Payment Link en https://dashboard.stripe.com/payment-links
-// usando el precio `price_1ThxvcBp1GDuZMnsPZhuMALh` y pega el enlace aquí
-export const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/your-payment-link"
-
-// Calendly — enlace directo para agendar la consulta
-export const CALENDLY_URL = "https://calendly.com/nelsondg7/30min"
+// Calendly — enlaces directos para agendar
+export const CALENDLY_FREE = "https://calendly.com/nelsondg7/consulta-gratuita-15min"   // gratis · 15-20 min
+export const CALENDLY_PAID = "https://calendly.com/nelsondg7/consulta-paga-60min"       // $50 USD · 45-60 min

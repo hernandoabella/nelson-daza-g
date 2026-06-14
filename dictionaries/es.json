@@ -23,7 +23,7 @@
     "titleEm": "Crecer",
     "title3": " en Colombia",
     "sub": "Nelson Daza te guía en cada paso de tu proceso migratorio — visas, residencia, inversión y nacionalidad colombiana. Atención presencial y remota en todo el mundo.",
-    "ctaPrimary": "Reservar Consulta — $50 USD",
+    "ctaPrimary": "Reservar Consulta",
     "ctaSecondary": "Ver Servicios",
     "stat1Num": "+5",
     "stat1Label": "Años de práctica",
@@ -79,13 +79,13 @@
     "cta": "Ver tarifas y servicios"
   },
   "pricing": {
-    "label": "Consulta Obligatoria",
+    "label": "Consultas",
     "title": "Transparencia en tarifas",
-    "intro": "Toda relación comienza con una consulta estratégica. Conoce tu ruta migratoria antes de comprometerte con cualquier trámite. El valor se descuenta si contratas dentro de 15 días.",
+    "intro": "Comienza con una consulta gratuita de 15 min para resolver dudas rápidas, o agenda una consulta estratégica de 45–60 min por $50 USD (valor descontable si contratas dentro de 15 días).",
     "plans": [
       {
         "name": "Consulta Estratégica",
-        "desc": "Consulta inicial obligatoria · 45–60 min",
+        "desc": "Consulta estratégica paga · 45–60 min · $50 USD",
         "price": "$50",
         "unit": "USD · Online o presencial",
         "features": [
@@ -157,7 +157,7 @@
     "label": "Cómo trabajamos",
     "title": "Cuatro pasos hacia tu objetivo",
     "steps": [
-      { "num": "I", "name": "Consulta Inicial", "desc": "Análisis de tu caso, elegibilidad y estrategia personalizada en 45–60 minutos." },
+      { "num": "I", "name": "Consulta Inicial", "desc": "Consulta gratuita de 15 min para dudas rápidas o consulta estratégica de 45–60 min con análisis completo." },
       { "num": "II", "name": "Análisis Documental", "desc": "Revisión y preparación de todos los documentos necesarios según tu tipo de visa." },
       { "num": "III", "name": "Presentación", "desc": "Radicación de la solicitud ante Cancillería o Migración Colombia con seguimiento activo." },
       { "num": "IV", "name": "Acompañamiento", "desc": "Te guiamos hasta recibir tu visa, cédula de extranjería y más allá." }
@@ -171,7 +171,7 @@
     "label": "Tu nueva vida empieza aquí",
     "title": "Hablemos de tu caso",
     "sub": "Agenda tu consulta estratégica y recibe una hoja de ruta clara para tu proceso migratorio en Colombia.",
-    "cta": "Reservar consulta — $50 USD"
+    "cta": "Reservar consulta"
   },
   "contact": {
     "label": "Contacto",
@@ -202,7 +202,8 @@
       "privacy": "Al enviar aceptas nuestra política de privacidad. Las consultas se confirman tras el pago.",
       "options": [
         "Seleccionar...",
-        "Consulta Estratégica — $50 USD",
+        "Consulta Gratuita 15 min",
+        "Consulta Estratégica 45–60 min — $50 USD",
         "Visa M · Cónyuge colombiano",
         "Visa M · Compañero permanente",
         "Visa V · Nómada digital",
@@ -214,6 +215,19 @@
         "Servicio complementario"
       ]
     }
+  },
+  "bookingOptions": {
+    "title": "Elige tu tipo de consulta",
+    "freeName": "Consulta Gratuita",
+    "freeDesc": "15–20 min · Sin costo",
+    "freeBullets": ["Resuelve dudas rápidas", "Sin compromiso", "Sin pago requerido"],
+    "freeCta": "Agendar gratis",
+    "freeCalDesc": "Selecciona una fecha disponible para tu consulta gratuita con Nelson Daza.",
+    "paidName": "Consulta Estratégica",
+    "paidDesc": "45–60 min · $50 USD",
+    "paidBullets": ["Análisis completo de tu caso", "Revisión de documentos", "Estrategia migratoria", "Se descuenta si contratas"],
+    "paidCta": "Agendar — $50 USD",
+    "paidCalDesc": "Selecciona una fecha disponible. Al confirmar, Calendly te pedirá el pago de <strong>$50 USD</strong> para reservar tu cita."
   },
   "booking": {
     "title": "Reservar Consulta Estratégica",

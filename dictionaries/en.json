@@ -23,7 +23,7 @@
     "titleEm": "Thrive",
     "title3": " in Colombia",
     "sub": "Nelson Daza guides you through every step of your Colombian immigration journey — visas, residency, investment and citizenship. In-person & remote worldwide.",
-    "ctaPrimary": "Book Consultation — $50 USD",
+    "ctaPrimary": "Book Consultation",
     "ctaSecondary": "Our Services",
     "stat1Num": "+5",
     "stat1Label": "Years Practice",
@@ -79,13 +79,13 @@
     "cta": "View pricing & services"
   },
   "pricing": {
-    "label": "Mandatory Consultation",
+    "label": "Consultations",
     "title": "Transparent pricing",
-    "intro": "Every relationship begins with a strategic consultation. Know your immigration roadmap before committing to any process. The fee is deducted if you hire within 15 days.",
+    "intro": "Start with a free 15-min consultation for quick questions, or book a 45–60 min strategic consultation for $50 USD (deductible if you hire within 15 days).",
     "plans": [
       {
         "name": "Strategic Consultation",
-        "desc": "Mandatory first step · 45–60 min",
+        "desc": "Paid strategic consultation · 45–60 min · $50 USD",
         "price": "$50",
         "unit": "USD · Online or in-person",
         "features": [
@@ -157,7 +157,7 @@
     "label": "How we work",
     "title": "Four steps to your goal",
     "steps": [
-      { "num": "I", "name": "Initial Consultation", "desc": "Case analysis, eligibility assessment and personalized strategy in 45–60 minutes." },
+      { "num": "I", "name": "Initial Consultation", "desc": "Free 15-min consultation for quick questions or 45–60 min strategic consultation with full case analysis." },
       { "num": "II", "name": "Document Review", "desc": "Review and preparation of all required documents specific to your visa type." },
       { "num": "III", "name": "Application Filing", "desc": "Submission to Cancillería or Migración Colombia with active monitoring." },
       { "num": "IV", "name": "Full Support", "desc": "We guide you until you receive your visa, foreigner ID and beyond." }
@@ -171,7 +171,7 @@
     "label": "Your new life starts here",
     "title": "Let's talk about your case",
     "sub": "Book your strategic consultation and get a clear roadmap for your Colombian immigration process.",
-    "cta": "Book consultation — $50 USD"
+    "cta": "Book consultation"
   },
   "contact": {
     "label": "Contact",
@@ -202,7 +202,8 @@
       "privacy": "By submitting you agree to our privacy policy. Consultations are confirmed after payment.",
       "options": [
         "Select...",
-        "Strategic Consultation — $50 USD",
+        "Free 15-min Consultation",
+        "Strategic Consultation 45–60 min — $50 USD",
         "Visa M · Colombian spouse",
         "Visa M · Permanent partner",
         "Visa V · Digital nomad",
@@ -214,6 +215,19 @@
         "Complementary service"
       ]
     }
+  },
+  "bookingOptions": {
+    "title": "Choose your consultation type",
+    "freeName": "Free Consultation",
+    "freeDesc": "15–20 min · No cost",
+    "freeBullets": ["Quick questions answered", "No commitment", "No payment required"],
+    "freeCta": "Book free",
+    "freeCalDesc": "Select an available date for your free consultation with Nelson Daza.",
+    "paidName": "Strategic Consultation",
+    "paidDesc": "45–60 min · $50 USD",
+    "paidBullets": ["Full case analysis", "Document review", "Immigration strategy", "Deducted if you hire"],
+    "paidCta": "Book — $50 USD",
+    "paidCalDesc": "Select an available date. Upon confirmation, Calendly will ask for <strong>$50 USD</strong> payment to book your appointment."
   },
   "booking": {
     "title": "Book Strategic Consultation",
