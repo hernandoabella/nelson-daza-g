@@ -560,6 +560,10 @@ footer { background: var(--bg2); color: var(--ink); border-top: 3px solid var(--
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+/* BLOG */
+.blog-card { background: var(--bg2); border-radius: 12px; padding: 28px 32px; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
+.blog-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+
 /* MOBILE */
 @media (max-width: 900px) {
   .lang-bar { padding: 8px 16px; }

@@ -8,6 +8,7 @@
     "services": "Services",
     "pricing": "Pricing",
     "process": "Process",
+    "blog": "Blog",
     "contact": "Contact",
     "cta": "Book Now"
   },
@@ -257,6 +258,10 @@
     }
   },
   "disclaimer": "⚠️ Legal notice: Published fees correspond exclusively to professional services and do not include government fees, visa duties, official translations, apostilles, legalizations, insurance, taxes, notarial expenses or third-party costs. Approval or denial of any visa, residency or nationality is the exclusive competence of Colombian authorities. Each case is unique.",
+  "blogPage": {
+    "title": "Blog",
+    "description": "Articles about investment, visas, immigration and more for foreigners in Colombia."
+  },
   "footer": {
     "brand": "Professional immigration advisory for foreigners in Colombia. In-person in Santa Marta · Remote worldwide.",
     "servicesTitle": "Services",

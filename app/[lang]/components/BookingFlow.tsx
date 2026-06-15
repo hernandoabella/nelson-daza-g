@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react"
 import { FaTimes, FaCheck } from "react-icons/fa"
 import { CALENDLY_FREE, CALENDLY_PAID } from "@/lib/config"
-import { ParticleBackground } from "./ParticleBackground"
 
 declare global {
   interface Window { Calendly?: any }
@@ -74,7 +73,6 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
           position: "relative",
         }}
       >
-        <ParticleBackground />
         <div
           style={{
             display: "flex", alignItems: "center", justifyContent: "space-between",

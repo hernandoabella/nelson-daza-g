@@ -31,6 +31,7 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
           <li><a href={`/${lang}#services`}>{dict.nav.services}</a></li>
           <li><a href={`/${lang}#pricing`}>{dict.nav.pricing}</a></li>
           <li><a href={`/${lang}#process`}>{dict.nav.process}</a></li>
+          <li><a href={`/${lang}/blog`}>{dict.nav.blog}</a></li>
           <li><a href={`/${lang}#contact`}>{dict.nav.contact}</a></li>
         </ul>
         <button

@@ -8,6 +8,7 @@
     "services": "Servicios",
     "pricing": "Tarifas",
     "process": "Proceso",
+    "blog": "Blog",
     "contact": "Contacto",
     "cta": "Consulta"
   },
@@ -257,6 +258,10 @@
     }
   },
   "disclaimer": "⚠️ Aviso legal: Los honorarios publicados corresponden exclusivamente a servicios profesionales y no incluyen tasas gubernamentales, derechos de visa, traducciones oficiales, apostillas, legalizaciones, seguros, impuestos, gastos notariales ni costos de terceros. La aprobación o negación de cualquier visa, residencia o nacionalidad es competencia exclusiva de las autoridades colombianas. Cada caso es único y será evaluado individualmente.",
+  "blogPage": {
+    "title": "Blog",
+    "description": "Artículos sobre inversión, visas, inmigración y más para extranjeros en Colombia."
+  },
   "footer": {
     "brand": "Asesoría migratoria profesional para extranjeros en Colombia. Presencial en Santa Marta · Remoto en todo el mundo.",
     "servicesTitle": "Servicios",
