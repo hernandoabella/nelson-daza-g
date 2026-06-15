@@ -1,8 +1,7 @@
 export function HeroSection({ dict }: { dict: Record<string, any> }) {
   return (
     <section className="hero" id="home">
-      <div className="hero-left">
-        <div className="hero-eyebrow">{dict.hero.eyebrow}</div>
+      <div className="hero-content">
         <h1>
           {dict.hero.title1}<br />
           {dict.hero.title2}<em>{dict.hero.titleEm}</em><br />
@@ -13,14 +12,6 @@ export function HeroSection({ dict }: { dict: Record<string, any> }) {
           <a href="#pricing" className="btn-primary">{dict.hero.ctaPrimary}</a>
           <a href="#services" className="btn-ghost">{dict.hero.ctaSecondary}</a>
         </div>
-        <div className="hero-stats">
-          <div className="stat"><div className="stat-num">{dict.hero.stat1Num}</div><div className="stat-label">{dict.hero.stat1Label}</div></div>
-          <div className="stat"><div className="stat-num">{dict.hero.stat2Num}</div><div className="stat-label">{dict.hero.stat2Label}</div></div>
-          <div className="stat"><div className="stat-num">{dict.hero.stat3Num}</div><div className="stat-label">{dict.hero.stat3Label}</div></div>
-        </div>
-      </div>
-      <div className="hero-right">
-        <img src="/lawyer.png" alt="Nelson Daza" className="hero-photo" />
       </div>
     </section>
   )

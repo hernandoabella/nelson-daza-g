@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Nelson Daza — Abogado Migratorio",
-  description: "Asesoría migratoria profesional para extranjeros en Colombia",
+  title: "Nelson Daza — Миграционный адвокат",
+  description: "Профессиональная миграционная поддержка для иностранцев в Колумбии",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
