@@ -1,4 +1,8 @@
 export function PricingSection({ dict, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
+  const allPlans = dict.pricing.plans
+  const mainPlans = allPlans.filter((p: any) => !p.secondary)
+  const secondaryPlans = allPlans.filter((p: any) => p.secondary)
+
   return (
     <section id="pricing">
       <div className="pricing-intro">
@@ -6,9 +10,11 @@ export function PricingSection({ dict, onBook }: { dict: Record<string, any>; la
         <h2 dangerouslySetInnerHTML={{ __html: dict.pricing.title.replace(/\n/g, "<br />") }} />
         <p>{dict.pricing.intro}</p>
       </div>
+
+      {/* Main plans — full-width cards */}
       <div className="pricing-grid">
-        {dict.pricing.plans.map((p: any, i: number) => (
-          <div className={`pricing-card reveal${p.featured ? " featured" : ""}`} key={i}>
+        {mainPlans.map((p: any, i: number) => (
+          <div className={`pricing-card reveal${p.featured ? " featured" : ""}`} key={`main-${i}`}>
             {p.badge && <div className="pricing-badge">{p.badge}</div>}
             <h3>{p.name}</h3>
             <div className="p-desc">{p.desc}</div>
@@ -19,7 +25,7 @@ export function PricingSection({ dict, onBook }: { dict: Record<string, any>; la
                 <li key={j}>{f}</li>
               ))}
             </ul>
-            <div className="price-note">{p.note}</div>
+            {p.note && <div className="price-note">{p.note}</div>}
             <br />
             <button
               className={p.featured ? "btn-primary" : "btn-ghost"}
@@ -31,6 +37,39 @@ export function PricingSection({ dict, onBook }: { dict: Record<string, any>; la
           </div>
         ))}
       </div>
+
+      {/* Secondary plans — compact cards */}
+      {secondaryPlans.length > 0 && (
+        <>
+          <div className="secondary-pricing-label">
+            <span className="secondary-label-line" />
+            <span className="secondary-label-text">Servicios adicionales</span>
+            <span className="secondary-label-line" />
+          </div>
+          <div className="pricing-grid-secondary">
+            {secondaryPlans.map((p: any, i: number) => (
+              <div className="pricing-card pricing-card-secondary reveal" key={`sec-${i}`}>
+                <h3>{p.name}</h3>
+                <div className="p-desc">{p.desc}</div>
+                <div className="price-amount price-amount-sm"><span>$</span>{p.price.replace("$", "")}</div>
+                <div className="price-unit">{p.unit}</div>
+                <ul className="price-features">
+                  {p.features.map((f: string, j: number) => (
+                    <li key={j}>{f}</li>
+                  ))}
+                </ul>
+                <button
+                  className="btn-ghost"
+                  onClick={onBook}
+                  style={{ display: "block", textAlign: "center", width: "100%", cursor: "pointer", marginTop: "16px" }}
+                >
+                  {p.cta}
+                </button>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </section>
   )
 }

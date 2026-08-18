@@ -52,7 +52,6 @@
     "edu": [
       { "icon": "🎓", "title": "Master's in Public International Law", "subtitle": "RUDN University · Moscow, Russia" },
       { "icon": "⚖️", "title": "Bachelor's in Law", "subtitle": "RUDN University · Moscow, Russia" },
-      { "icon": "📜", "title": "Official Translator Diploma RU–ES", "subtitle": "RUDN University · Moscow, Russia" },
       { "icon": "🏛️", "title": "Law Studies", "subtitle": "Universidad del Magdalena · Santa Marta, CO" }
     ],
     "langs": [
@@ -66,12 +65,12 @@
     "label": "Visas & Services",
     "title": "Migration solutions\nbuilt for you",
     "items": [
-      { "num": "01", "name": "Visa M — Spouse of Colombian", "desc": "Legal marriage to a Colombian citizen. Includes explanatory letter, evidence of genuine relationship and cohabitation records.", "fee": "USD 1,200 – 1,800" },
-      { "num": "02", "name": "Visa M — Permanent Partner", "desc": "Demonstrable marital union with a Colombian. Cohabitation evidence is the most critical element of this application.", "fee": "USD 1,500 – 2,000" },
-      { "num": "03", "name": "Visa V — Digital Nomad", "desc": "For those working remotely for foreign companies: developers, designers, consultants, content creators.", "fee": "USD 900 – 1,500" },
-      { "num": "04", "name": "Visa M — Retiree / Pensioner", "desc": "Lifelong pension equivalent to 3 Colombian minimum wages. Ideal for US, Canadian and European retirees.", "fee": "USD 1,000 – 1,800" },
-      { "num": "05", "name": "Visa M — Real Estate Investor", "desc": "The most attractive visa for Santa Marta. Min. investment: 350 minimum wages (~USD 95,000). Includes Banco de la República registration.", "fee": "USD 3,000 – 7,500" },
-      { "num": "06", "name": "Permanent Residency (Visa R)", "desc": "The premium product. Via time accumulation, Colombian parentage, or direct investment of 650 minimum wages (~USD 275,000).", "fee": "USD 4,000 – 8,000" }
+      { "num": "01", "name": "Visa M — Spouse of Colombian", "desc": "Legal marriage to a Colombian citizen. Includes explanatory letter, evidence of genuine relationship and cohabitation records.", "fee": "USD 900 – 1,200" },
+      { "num": "02", "name": "Visa M — Permanent Partner", "desc": "Demonstrable marital union with a Colombian. Cohabitation evidence is the most critical element of this application.", "fee": "USD 1,000 – 1,400" },
+      { "num": "03", "name": "Visa V — Digital Nomad", "desc": "For those working remotely for foreign companies: developers, designers, consultants, content creators.", "fee": "USD 650 – 850" },
+      { "num": "04", "name": "Visa M — Retiree / Pensioner", "desc": "Lifelong pension equivalent to 3 Colombian minimum wages. Ideal for US, Canadian and European retirees.", "fee": "USD 700 – 900" },
+      { "num": "05", "name": "Visa M — Real Estate Investor", "desc": "The most attractive visa for Santa Marta. Min. investment: 350 minimum wages (~USD 95,000). Includes Banco de la República registration.", "fee": "USD 1,500 – 3,000" },
+      { "num": "06", "name": "Permanent Residency (Visa R)", "desc": "The premium product. Via time accumulation, Colombian parentage, or direct investment of 650 minimum wages (~USD 275,000).", "fee": "USD 2,500 – 5,000" }
     ]
   },
   "banner2": {
@@ -82,12 +81,12 @@
   "pricing": {
     "label": "Consultations",
     "title": "Transparent pricing",
-    "intro": "Start with a free 15-min consultation for quick questions, or book a 45–60 min strategic consultation for $50 USD (deductible if you hire within 15 days).",
+    "intro": "Start with a free 15-min consultation for quick questions, or book a 45–60 min strategic consultation for $35 USD (deductible if you hire within 15 days).",
     "plans": [
       {
         "name": "Strategic Consultation",
-        "desc": "Paid strategic consultation · 45–60 min · $50 USD",
-        "price": "$50",
+        "desc": "Paid strategic consultation · 45–60 min · $35 USD",
+        "price": "$35",
         "unit": "USD · Online or in-person",
         "features": [
           "Eligibility analysis",
@@ -99,20 +98,20 @@
         ],
         "note": "✦ Deducted from service fee if hired within 15 days",
         "cta": "Book now",
-        "featured": false
+        "featured": true
       },
       {
         "name": "Full Visa M / V Service",
         "desc": "Full visa application management",
-        "price": "$900+",
+        "price": "$650+",
         "unit": "USD · Depending on visa type",
         "badge": "Most requested",
         "features": [
-          "Colombian spouse: $1,200–1,800",
-          "Permanent partner: $1,500–2,000",
-          "Digital nomad: $900–1,500",
-          "Retiree/pensioner: $1,000–1,800",
-          "Business partner: $2,500–5,000",
+          "Colombian spouse: $900–1,200",
+          "Permanent partner: $1,000–1,400",
+          "Digital nomad: $650–850",
+          "Retiree/pensioner: $700–900",
+          "Business partner: $1,500–2,500",
           "Full document management"
         ],
         "note": "✦ Includes deducted initial consultation",
@@ -122,19 +121,101 @@
       {
         "name": "Residency & Citizenship",
         "desc": "Premium product · Visa R",
-        "price": "$4,000+",
-        "unit": "USD · Permanent residency or citizenship",
+        "price": "$2,000+",
+        "unit": "USD · Depending on process type",
         "features": [
-          "Permanent residency (Visa R): $4,000–8,000",
-          "Colombian citizenship: $4,000–8,000",
-          "Real estate investor visa: $3,000–7,500",
+          "Permanent residency (Visa R): $2,500–5,000",
+          "Colombian citizenship: $2,000–4,000",
+          "Investor / entrepreneur: $1,500–3,000",
           "Full eligibility analysis",
-          "Management before Migración Colombia",
-          "Follow-up until approval"
+          "Process management and follow-up",
+          "Document preparation and review"
         ],
-        "note": "✦ Min. investment for investor residency: ~USD 275,000",
+        "note": "✦ Initial consultation included and deducted",
         "cta": "Enquire",
-        "featured": false
+        "featured": true
+      },
+      {
+        "name": "File Preparation",
+        "desc": "Document organization and review",
+        "price": "$300+",
+        "unit": "USD · Depending on complexity",
+        "features": [
+          "Complete file review",
+          "Document organization",
+          "Specific requirements verification",
+          "Apostille and legalization guidance",
+          "Personalized checklist"
+        ],
+        "note": "",
+        "cta": "Enquire",
+        "featured": false,
+        "secondary": true
+      },
+      {
+        "name": "Document Review",
+        "desc": "Detailed document audit",
+        "price": "$100+",
+        "unit": "USD · Per document or package",
+        "features": [
+          "Detailed review of each document",
+          "Error and omission identification",
+          "Corrections and recommendations",
+          "Chancery requirements compliance"
+        ],
+        "note": "",
+        "cta": "Enquire",
+        "featured": false,
+        "secondary": true
+      },
+      {
+        "name": "Investors & Entrepreneurs",
+        "desc": "Comprehensive investor support",
+        "price": "$1,500+",
+        "unit": "USD · Depending on scope",
+        "features": [
+          "Company formation (S.A.S., S.A., Ltda.)",
+          "Chamber of Commerce registration",
+          "Corporate bank account opening",
+          "Foreign investment registration",
+          "Initial tax advisory"
+        ],
+        "note": "",
+        "cta": "Enquire",
+        "featured": false,
+        "secondary": true
+      },
+      {
+        "name": "Family Package",
+        "desc": "Family immigration management",
+        "price": "$1,000+",
+        "unit": "USD · Depending on members",
+        "features": [
+          "Management for spouse and children",
+          "Integrated family documentation",
+          "Simultaneous process coordination",
+          "Personalized advisory per member"
+        ],
+        "note": "",
+        "cta": "Enquire",
+        "featured": false,
+        "secondary": true
+      },
+      {
+        "name": "Requirements & Observations",
+        "desc": "Official request responses",
+        "price": "$200+",
+        "unit": "USD · Per management",
+        "features": [
+          "Chancery requirement responses",
+          "Observation corrections",
+          "Additional document filing",
+          "Priority follow-up"
+        ],
+        "note": "",
+        "cta": "Enquire",
+        "featured": false,
+        "secondary": true
       }
     ]
   },
@@ -204,7 +285,7 @@
       "options": [
         "Select...",
         "Free 15-min Consultation",
-        "Strategic Consultation 45–60 min — $50 USD",
+        "Strategic Consultation 45–60 min — $35 USD",
         "Visa M · Colombian spouse",
         "Visa M · Permanent partner",
         "Visa V · Digital nomad",
@@ -225,10 +306,10 @@
     "freeCta": "Book free",
     "freeCalDesc": "Select an available date for your free consultation with Nelson Daza.",
     "paidName": "Strategic Consultation",
-    "paidDesc": "45–60 min · $50 USD",
+    "paidDesc": "45–60 min · $35 USD",
     "paidBullets": ["Full case analysis", "Document review", "Immigration strategy", "Deducted if you hire"],
-    "paidCta": "Book — $50 USD",
-    "paidCalDesc": "Select an available date. Upon confirmation, Calendly will ask for <strong>$50 USD</strong> payment to book your appointment."
+    "paidCta": "Book — $35 USD",
+    "paidCalDesc": "Select an available date. Upon confirmation, Calendly will ask for <strong>$35 USD</strong> payment to book your appointment."
   },
   "booking": {
     "title": "Book Strategic Consultation",
@@ -239,8 +320,8 @@
     "next": "Next",
     "back": "Back",
     "payTitle": "Consultation Payment",
-    "payDesc": "The strategic consultation fee is <strong>$50 USD</strong>. Once payment is complete, you can schedule your appointment on the calendar.",
-    "payBtn": "Pay $50 USD — Credit/Debit Card",
+    "payDesc": "The strategic consultation fee is <strong>$35 USD</strong>. Once payment is complete, you can schedule your appointment on the calendar.",
+    "payBtn": "Pay $35 USD — Credit/Debit Card",
     "payProcessing": "Processing payment...",
     "scheduleTitle": "Schedule your appointment",
     "scheduleDesc": "Payment confirmed! Select the date and time that works best for your consultation with Nelson Daza.",

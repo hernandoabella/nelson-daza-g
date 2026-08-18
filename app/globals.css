@@ -509,6 +509,41 @@ h2 em { font-style: italic; color: var(--gold); }
 .price-note { font-family: 'DM Mono', monospace; font-size: 0.58rem; color: var(--gray); margin-top: 10px; line-height: 1.5; }
 .pricing-card.featured .price-note { color: rgba(255,255,255,0.35); }
 
+/* SECONDARY PRICING */
+.secondary-pricing-label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 56px 0 32px;
+}
+.secondary-label-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.secondary-label-text {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray);
+  white-space: nowrap;
+}
+.pricing-grid-secondary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2px;
+}
+.pricing-card-secondary {
+  padding: 28px 24px !important;
+}
+.pricing-card-secondary h3 {
+  font-size: 1.1rem !important;
+}
+.price-amount-sm {
+  font-size: 2.2rem !important;
+}
+
 /* COMPLEMENTARY */
 .comp-bg { background: var(--bg2); }
 .comp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 48px; }
@@ -584,6 +619,7 @@ footer { background: var(--bg2); color: var(--ink); border-top: 3px solid var(--
   .process-steps { grid-template-columns: 1fr 1fr; }
   .process-steps::before { display: none; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-grid-secondary { grid-template-columns: 1fr; }
   .comp-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 44px; }
   .form-row { grid-template-columns: 1fr; }
