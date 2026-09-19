@@ -15,16 +15,9 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
 
   return (
     <>
-      <div className="lang-bar">
-        <button className={`lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}>ES</button>
-        <span className="lang-sep">|</span>
-        <button className={`lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}>EN</button>
-        <span className="lang-sep">|</span>
-        <button className={`lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}>RU</button>
-      </div>
       <nav id="navbar">
         <a href={`/${lang}`} className="nav-logo">
-          <img src="/logo.png" alt="Nelson Daza" className="nav-logo-img" />
+          <img src="/logo.jpeg" alt="Nelson Daza" className="nav-logo-img" />
         </a>
         <ul className="nav-links">
           <li><a href={`/${lang}#about`}>{dict.nav.about}</a></li>
@@ -34,13 +27,20 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
           <li><a href={`/${lang}/blog`}>{dict.nav.blog}</a></li>
           <li><a href={`/${lang}#contact`}>{dict.nav.contact}</a></li>
         </ul>
-        <button
-          className="nav-cta btn-primary"
-          onClick={onBook}
-          style={{ padding: "11px 26px", fontSize: "0.68rem", border: "none", cursor: "pointer" }}
-        >
-          {dict.nav.cta}
-        </button>
+        <div className="nav-cta-wrap">
+          <div className="nav-langs">
+            <button className={`nav-lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}><span className="flag" aria-hidden>🇪🇸</span>ES</button>
+            <button className={`nav-lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}><span className="flag" aria-hidden>🇬🇧</span>EN</button>
+            <button className={`nav-lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}><span className="flag" aria-hidden>🇷🇺</span>RU</button>
+          </div>
+          <button
+            className="nav-cta btn-primary"
+            onClick={onBook}
+            style={{ padding: "11px 26px", fontSize: "0.68rem", border: "none", cursor: "pointer" }}
+          >
+            {dict.nav.cta}
+          </button>
+        </div>
       </nav>
     </>
   )
