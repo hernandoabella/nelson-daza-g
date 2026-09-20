@@ -1,4 +1,10 @@
+"use client"
+
+import { useState } from "react"
+import { FiChevronDown } from "react-icons/fi"
+
 export function PricingSection({ dict, onBook }: { dict: Record<string, any>; lang: string; onBook: () => void }) {
+  const [openAcc, setOpenAcc] = useState<number | null>(null)
   const allPlans = dict.pricing.plans
   const mainPlans = allPlans.filter((p: any) => !p.secondary)
   const secondaryPlans = allPlans.filter((p: any) => p.secondary)
@@ -49,22 +55,36 @@ export function PricingSection({ dict, onBook }: { dict: Record<string, any>; la
           <div className="pricing-grid-secondary">
             {secondaryPlans.map((p: any, i: number) => (
               <div className="pricing-card pricing-card-secondary reveal" key={`sec-${i}`}>
-                <h3>{p.name}</h3>
-                <div className="p-desc">{p.desc}</div>
-                <div className="price-amount price-amount-sm"><span>$</span>{p.price.replace("$", "")}</div>
-                <div className="price-unit">{p.unit}</div>
-                <ul className="price-features">
-                  {p.features.map((f: string, j: number) => (
-                    <li key={j}>{f}</li>
-                  ))}
-                </ul>
-                <button
-                  className="btn-ghost"
-                  onClick={onBook}
-                  style={{ display: "block", textAlign: "center", width: "100%", cursor: "pointer", marginTop: "16px" }}
+                <div
+                  className="svc-acc-head"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openAcc === i}
+                  onClick={() => setOpenAcc(openAcc === i ? null : i)}
+                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setOpenAcc(openAcc === i ? null : i) } }}
                 >
-                  {p.cta}
-                </button>
+                  <div>
+                    <h3>{p.name}</h3>
+                    <div className="p-desc">{p.desc}</div>
+                  </div>
+                  <span className={`svc-acc-chevron${openAcc === i ? " open" : ""}`}><FiChevronDown /></span>
+                </div>
+                <div className={`svc-acc-body${openAcc === i ? " open" : ""}`}>
+                  <div>
+                    <ul className="price-features">
+                      {p.features.map((f: string, j: number) => (
+                        <li key={j}>{f}</li>
+                      ))}
+                    </ul>
+                    <button
+                      className="btn-ghost"
+                      onClick={onBook}
+                      style={{ display: "block", textAlign: "center", width: "100%", cursor: "pointer", marginTop: "16px" }}
+                    >
+                      {p.cta}
+                    </button>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

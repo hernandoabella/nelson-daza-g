@@ -1,6 +1,10 @@
 export function HeroSection({ dict }: { dict: Record<string, any> }) {
   return (
     <section className="hero" id="home">
+      <video className="hero-video" autoPlay muted loop playsInline>
+        <source src="/video1.mp4" type="video/mp4" />
+      </video>
+      <div className="hero-overlay" />
       <div className="hero-content">
         <h1>
           {dict.hero.title1}<br />

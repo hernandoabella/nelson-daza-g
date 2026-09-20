@@ -17,7 +17,7 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
     <>
       <nav id="navbar">
         <a href={`/${lang}`} className="nav-logo">
-          <img src="/logo.jpeg" alt="Nelson Daza" className="nav-logo-img" />
+          <img src="/logo.png" alt="Nelson Daza" className="nav-logo-img" />
         </a>
         <ul className="nav-links">
           <li><a href={`/${lang}#about`}>{dict.nav.about}</a></li>
@@ -29,9 +29,15 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
         </ul>
         <div className="nav-cta-wrap">
           <div className="nav-langs">
-            <button className={`nav-lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}><span className="flag" aria-hidden>🇪🇸</span>ES</button>
-            <button className={`nav-lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}><span className="flag" aria-hidden>🇬🇧</span>EN</button>
-            <button className={`nav-lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}><span className="flag" aria-hidden>🇷🇺</span>RU</button>
+            <button className={`nav-lang-btn ${isActive("es")}`} onClick={() => switchLang("es")}>
+              <img src="/espanol.png" className="lang-icon" alt="Español" /> ES
+            </button>
+            <button className={`nav-lang-btn ${isActive("en")}`} onClick={() => switchLang("en")}>
+              <img src="/english.png" className="lang-icon" alt="English" /> EN
+            </button>
+            <button className={`nav-lang-btn ${isActive("ru")}`} onClick={() => switchLang("ru")}>
+              <img src="/ruso.png" className="lang-icon" alt="Русский" /> RU
+            </button>
           </div>
           <button
             className="nav-cta btn-primary"

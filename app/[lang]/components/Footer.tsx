@@ -3,8 +3,7 @@ export function Footer({ dict, onBook }: { dict: Record<string, any>; lang: stri
     <>
       <footer>
         <div className="footer-brand">
-          <img src="/logo.jpeg" alt="Nelson Daza" style={{ height: "150px", width: "auto", display: "block", marginBottom: "16px" }} />
-          <p>{dict.footer.brand}</p>
+          <img src="/dark-logo.png" alt="Nelson Daza" style={{ height: "150px", width: "auto", display: "block", marginBottom: "16px" }} />
         </div>
         <div className="footer-links">
           <h5>{dict.footer.servicesTitle}</h5>

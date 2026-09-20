@@ -1,0 +1,9 @@
+$ErrorActionPreference='Stop'
+Set-Location -LiteralPath 'G:\GitHub\nelson-daza-g'
+$output = & npx next build 2>&1 | Out-String
+$code = $LASTEXITCODE
+Write-Output ('EXITCODE=' + $code)
+if ($output -match 'Compiled successfully|Generating static pages|Route \(app\)|ƒ|○|●') { }
+Write-Output '--- error-lines ---'
+$output -split "`r?`n" | Where-Object { $_ -match 'error|Error|Module not found|SyntaxError|Type error|Failed' } | ForEach-Object { $_.Trim() }
+Write-Output '--- done ---'

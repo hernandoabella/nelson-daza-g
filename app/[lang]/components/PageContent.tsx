@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 import { Nav } from "./Nav"
 import { HeroSection } from "./HeroSection"
-import { MarqueeBanner } from "./MarqueeBanner"
 import { ImageBanner } from "./ImageBanner"
 import { AboutSection } from "./AboutSection"
 import { ServicesSection } from "./ServicesSection"
@@ -77,7 +76,7 @@ export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: s
       <div className="cursor-ring" id="cursorRing" />
       <Nav dict={dict} lang={lang} onBook={() => setBookingOpen(true)} />
       <HeroSection dict={dict} />
-      <MarqueeBanner />
+      <AboutSection dict={dict} lang={lang} />
       <ImageBanner
         imgSrc="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1800&q=80&auto=format&fit=crop"
         icon="⚖️"
@@ -90,7 +89,6 @@ export function PageContent({ dict, lang }: { dict: Record<string, any>; lang: s
           { num: dict.banner1.stat3Num, label: dict.banner1.stat3Label },
         ]}
       />
-      <AboutSection dict={dict} lang={lang} />
       <ServicesSection dict={dict} lang={lang} />
       <ImageBanner
         imgSrc="https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?w=1800&q=80&auto=format&fit=crop"
