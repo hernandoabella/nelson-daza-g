@@ -9,6 +9,7 @@ export function ServicesSection({ dict }: { dict: Record<string, any>; lang: str
             <div className="service-num">{s.num}</div>
             <h3>{s.name}</h3>
             <p>{s.desc}</p>
+            {s.fee && <div className="service-fee">{s.fee}</div>}
           </div>
         ))}
       </div>

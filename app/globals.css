@@ -627,6 +627,8 @@ h2 em { font-style: italic; color: var(--gold); }
 .pricing-card.featured h3 { color: var(--white); }
 .p-desc { font-family: 'Inter', system-ui, sans-serif; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 26px; }
 .pricing-card.featured .p-desc { color: rgba(255,255,255,0.55); }
+.price-prefix { font-family: 'Inter', system-ui, sans-serif; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 6px; }
+.pricing-card.featured .price-prefix { color: var(--gold); }
 .price-amount { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 800; color: var(--gold); line-height: 1; margin-bottom: 5px; }
 .price-amount span { font-size: 1.2rem; font-weight: 400; }
 .price-unit { font-family: 'Inter', system-ui, sans-serif; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray); margin-bottom: 28px; }
@@ -676,7 +678,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .svc-acc-body.open { grid-template-rows: 1fr; }
 .svc-acc-body ul { padding: 0 24px; }
 .svc-acc-body.open ul { padding-top: 4px; }
-.svc-acc-body .btn-ghost { margin-left: 24px; margin-right: 24px; width: calc(100% - 48px) !important; }
+.svc-acc-body .btn-ghost { margin: 20px 24px 24px; width: calc(100% - 48px) !important; }
 .pricing-card-secondary h3 { font-size: 1.1rem !important; }
 .price-amount-sm { font-size: 2.2rem !important; }
 

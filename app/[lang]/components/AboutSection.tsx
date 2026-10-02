@@ -10,7 +10,7 @@ export function AboutSection({ dict }: { dict: Record<string, any>; lang: string
           <div className="about-portrait">
             <div className="portrait-frame">
               <img
-                src="/lawyer.jpg"
+                src="/foto-oficina-final.png"
                 alt="Nelson Daza"
               />
             </div>

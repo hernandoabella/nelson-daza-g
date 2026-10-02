@@ -47,12 +47,24 @@
   "about": {
     "label": "About Nelson Daza",
     "title": "International training,\nlocal expertise",
-    "p1": "Nelson Daza is a Colombian professional specializing in international affairs, legal documentation and immigration processes for foreigners who wish to live, invest, work or establish businesses in Colombia.",
-    "p2": "He holds an international legal education from RUDN Patrice Lumumba University in Moscow, one of the most recognized universities in Eastern Europe for international relations and law. His mission: to facilitate the legal and migratory integration of foreigners in Colombia through clear, professional and personalized advice.",
+    "p1": "Nelson Daza is a Colombian lawyer, licensed to practice law in Colombia and holder of a Professional ID Card, specialized in international matters, legal documentation and immigration processes for foreigners who wish to live, invest, work or establish businesses in Colombia.",
+    "p2": "He holds an international legal education from RUDN Patrice Lumumba University in Moscow, with experience in international legal matters and immigration documentation. His mission is to facilitate the legal and immigration integration of foreigners in Colombia through clear, professional and personalized advice, accompanying each client through the different stages of their process. Colombian legal advice for foreigners who want to make Colombia their new home, investment destination or business base.",
     "edu": [
-      { "icon": "🎓", "title": "Master's in Public International Law", "subtitle": "RUDN University · Moscow, Russia" },
-      { "icon": "⚖️", "title": "Bachelor's in Law", "subtitle": "RUDN University · Moscow, Russia" },
-      { "icon": "🏛️", "title": "Law Studies", "subtitle": "Universidad del Magdalena · Santa Marta, CO" }
+      {
+        "icon": "🎓",
+        "title": "Master's in Public International Law",
+        "subtitle": "RUDN University · Moscow, Russia"
+      },
+      {
+        "icon": "⚖️",
+        "title": "Bachelor's in Law",
+        "subtitle": "RUDN University · Moscow, Russia"
+      },
+      {
+        "icon": "🏛️",
+        "title": "Law Studies",
+        "subtitle": "Universidad del Magdalena · Santa Marta, CO"
+      }
     ],
     "langs": [
       "🇨🇴 Spanish — Native",
@@ -65,12 +77,42 @@
     "label": "Visas & Services",
     "title": "Migration solutions\nbuilt for you",
     "items": [
-      { "num": "01", "name": "Visa M — Spouse of Colombian", "desc": "Legal marriage to a Colombian citizen. Includes explanatory letter, evidence of genuine relationship and cohabitation records.", "fee": "USD 900 – 1,200" },
-      { "num": "02", "name": "Visa M — Permanent Partner", "desc": "Demonstrable marital union with a Colombian. Cohabitation evidence is the most critical element of this application.", "fee": "USD 1,000 – 1,400" },
-      { "num": "03", "name": "Visa V — Digital Nomad", "desc": "For those working remotely for foreign companies: developers, designers, consultants, content creators.", "fee": "USD 650 – 850" },
-      { "num": "04", "name": "Visa M — Retiree / Pensioner", "desc": "Lifelong pension equivalent to 3 Colombian minimum wages. Ideal for US, Canadian and European retirees.", "fee": "USD 700 – 900" },
-      { "num": "05", "name": "Visa M — Real Estate Investor", "desc": "The most attractive visa for Santa Marta. Min. investment: 350 minimum wages (~USD 95,000). Includes Banco de la República registration.", "fee": "USD 1,500 – 3,000" },
-      { "num": "06", "name": "Permanent Residency (Visa R)", "desc": "The premium product. Via time accumulation, Colombian parentage, or direct investment of 650 minimum wages (~USD 275,000).", "fee": "USD 2,500 – 5,000" }
+      {
+        "num": "01",
+        "name": "Visa M — Spouse of Colombian",
+        "desc": "Legal marriage to a Colombian citizen. Includes explanatory letter, evidence of genuine relationship and cohabitation records.",
+        "fee": "From USD $550"
+      },
+      {
+        "num": "02",
+        "name": "Visa M — Permanent Partner",
+        "desc": "Demonstrable marital union with a Colombian. Cohabitation evidence is the most critical element of this application.",
+        "fee": "From USD $600"
+      },
+      {
+        "num": "03",
+        "name": "Visa V — Digital Nomad",
+        "desc": "For those working remotely for foreign companies: developers, designers, consultants, content creators.",
+        "fee": "From USD $450"
+      },
+      {
+        "num": "04",
+        "name": "Visa M — Retiree / Pensioner",
+        "desc": "Lifelong pension equivalent to 3 Colombian minimum wages. Ideal for US, Canadian and European retirees.",
+        "fee": "From USD $500"
+      },
+      {
+        "num": "05",
+        "name": "Visa M — Real Estate Investor",
+        "desc": "The most attractive visa for Santa Marta. Min. investment: 350 minimum wages (~USD 95,000). Includes Banco de la República registration.",
+        "fee": "From USD $850"
+      },
+      {
+        "num": "06",
+        "name": "Permanent Residency (Visa R)",
+        "desc": "The premium product. Via time accumulation, Colombian parentage, or direct investment of 650 minimum wages (~USD 275,000).",
+        "fee": "From USD $750"
+      }
     ]
   },
   "banner2": {
@@ -103,37 +145,39 @@
       {
         "name": "Full Visa M / V Service",
         "desc": "Full visa application management",
-        "price": "$650+",
+        "price": "$650",
         "unit": "USD · Depending on visa type",
         "badge": "Most requested",
         "features": [
-          "Colombian spouse: $900–1,200",
-          "Permanent partner: $1,000–1,400",
-          "Digital nomad: $650–850",
-          "Retiree/pensioner: $700–900",
-          "Business partner: $1,500–2,500",
+          "Colombian spouse: From $550",
+          "Permanent partner: From $600",
+          "Digital nomad: From $450",
+          "Retiree/pensioner: From $500",
+          "Business partner: From $1,500",
           "Full document management"
         ],
         "note": "✦ Includes deducted initial consultation",
         "cta": "Discuss your case",
-        "featured": true
+        "featured": true,
+        "pricePrefix": "From"
       },
       {
         "name": "Residency & Citizenship",
         "desc": "Premium product · Visa R",
-        "price": "$2,000+",
+        "price": "$2,000",
         "unit": "USD · Depending on process type",
         "features": [
-          "Permanent residency (Visa R): $2,500–5,000",
-          "Colombian citizenship: $2,000–4,000",
-          "Investor / entrepreneur: $1,500–3,000",
+          "Permanent residency (Visa R): From $750",
+          "Colombian citizenship: From $2,000",
+          "Investor / entrepreneur: From $1,500",
           "Full eligibility analysis",
           "Process management and follow-up",
           "Document preparation and review"
         ],
         "note": "✦ Initial consultation included and deducted",
         "cta": "Enquire",
-        "featured": true
+        "featured": true,
+        "pricePrefix": "From"
       },
       {
         "name": "File Preparation",
@@ -223,26 +267,72 @@
     "label": "Complementary Services",
     "title": "Complete support",
     "items": [
-      { "name": "Visa Registration", "fee": "USD 250" },
-      { "name": "Foreigner ID Card", "fee": "USD 350" },
-      { "name": "Visa Renewal", "fee": "USD 700 – 1,500" },
-      { "name": "Category Change", "fee": "USD 1,000 – 2,000" },
-      { "name": "Company Formation", "fee": "USD 1,500 – 3,500" },
-      { "name": "Foreign Investment Registration", "fee": "USD 1,000 – 2,500" },
-      { "name": "Real Estate Due Diligence", "fee": "USD 800 – 2,000" },
-      { "name": "Bank Account Opening", "fee": "USD 500 – 1,500" },
-      { "name": "English–Spanish Translation", "fee": "From USD 35/page" },
-      { "name": "Russian–Spanish Translation", "fee": "From USD 50/page" }
+      {
+        "name": "Visa Registration",
+        "fee": "USD 250"
+      },
+      {
+        "name": "Foreigner ID Card",
+        "fee": "USD 350"
+      },
+      {
+        "name": "Visa Renewal",
+        "fee": "USD 700 – 1,500"
+      },
+      {
+        "name": "Category Change",
+        "fee": "USD 1,000 – 2,000"
+      },
+      {
+        "name": "Company Formation",
+        "fee": "USD 1,500 – 3,500"
+      },
+      {
+        "name": "Foreign Investment Registration",
+        "fee": "USD 1,000 – 2,500"
+      },
+      {
+        "name": "Real Estate Due Diligence",
+        "fee": "USD 800 – 2,000"
+      },
+      {
+        "name": "Bank Account Opening",
+        "fee": "USD 500 – 1,500"
+      },
+      {
+        "name": "English–Spanish Translation",
+        "fee": "From USD 35/page"
+      },
+      {
+        "name": "Russian–Spanish Translation",
+        "fee": "From USD 50/page"
+      }
     ]
   },
   "process": {
     "label": "How we work",
     "title": "Four steps to your goal",
     "steps": [
-      { "num": "I", "name": "Initial Consultation", "desc": "Free 15-min consultation for quick questions or 45–60 min strategic consultation with full case analysis." },
-      { "num": "II", "name": "Document Review", "desc": "Review and preparation of all required documents specific to your visa type." },
-      { "num": "III", "name": "Application Filing", "desc": "Submission to Cancillería or Migración Colombia with active monitoring." },
-      { "num": "IV", "name": "Full Support", "desc": "We guide you until you receive your visa, foreigner ID and beyond." }
+      {
+        "num": "I",
+        "name": "Initial Consultation",
+        "desc": "Free 15-min consultation for quick questions or 45–60 min strategic consultation with full case analysis."
+      },
+      {
+        "num": "II",
+        "name": "Document Review",
+        "desc": "Review and preparation of all required documents specific to your visa type."
+      },
+      {
+        "num": "III",
+        "name": "Application Filing",
+        "desc": "Submission to Cancillería or Migración Colombia with active monitoring."
+      },
+      {
+        "num": "IV",
+        "name": "Full Support",
+        "desc": "We guide you until you receive your visa, foreigner ID and beyond."
+      }
     ]
   },
   "testimonials": {
@@ -261,10 +351,26 @@
     "introTitle": "Book your consultation",
     "intro": "Fill in the form and we will contact you within 24 hours to confirm date, time and payment method. All information is strictly confidential.",
     "details": [
-      { "icon": "📍", "label": "Location", "value": "Santa Marta, Colombia · In-person & remote" },
-      { "icon": "📞", "label": "WhatsApp", "value": "+57 312 7323913" },
-      { "icon": "🌐", "label": "Languages", "value": "Spanish · English · Russian · French" },
-      { "icon": "🕐", "label": "Office Hours", "value": "Mon–Fri: 8:00–18:00 (GMT-5)" }
+      {
+        "icon": "📍",
+        "label": "Location",
+        "value": "Santa Marta, Colombia · In-person & remote"
+      },
+      {
+        "icon": "📞",
+        "label": "WhatsApp",
+        "value": "+57 312 7323913"
+      },
+      {
+        "icon": "🌐",
+        "label": "Languages",
+        "value": "Spanish · English · Russian · French"
+      },
+      {
+        "icon": "🕐",
+        "label": "Office Hours",
+        "value": "Mon–Fri: 8:00–18:00 (GMT-5)"
+      }
     ],
     "form": {
       "name": "Name",
@@ -302,12 +408,21 @@
     "title": "Choose your consultation type",
     "freeName": "Free Consultation",
     "freeDesc": "15–20 min · No cost",
-    "freeBullets": ["Quick questions answered", "No commitment", "No payment required"],
+    "freeBullets": [
+      "Quick questions answered",
+      "No commitment",
+      "No payment required"
+    ],
     "freeCta": "Book free",
     "freeCalDesc": "Select an available date for your free consultation with Nelson Daza.",
     "paidName": "Strategic Consultation",
     "paidDesc": "45–60 min · $35 USD",
-    "paidBullets": ["Full case analysis", "Document review", "Immigration strategy", "Deducted if you hire"],
+    "paidBullets": [
+      "Full case analysis",
+      "Document review",
+      "Immigration strategy",
+      "Deducted if you hire"
+    ],
     "paidCta": "Book — $35 USD",
     "paidCalDesc": "Select an available date. Upon confirmation, Calendly will ask for <strong>$35 USD</strong> payment to book your appointment."
   },
@@ -332,9 +447,24 @@
       "whatsapp": "WhatsApp",
       "nationality": "Current nationality",
       "visaType": "What type of visa are you interested in?",
-      "visaOptions": ["Not sure", "Visa M — Spouse/Partner", "Visa V — Digital Nomad", "Visa M — Retiree/Pensioner", "Visa M — Real Estate Investor", "Visa M — Business Partner", "Permanent Residency (Visa R)", "Colombian Citizenship", "Other"],
+      "visaOptions": [
+        "Not sure",
+        "Visa M — Spouse/Partner",
+        "Visa V — Digital Nomad",
+        "Visa M — Retiree/Pensioner",
+        "Visa M — Real Estate Investor",
+        "Visa M — Business Partner",
+        "Permanent Residency (Visa R)",
+        "Colombian Citizenship",
+        "Other"
+      ],
       "timeline": "When do you plan to start the process?",
-      "timelineOptions": ["As soon as possible", "In 1-3 months", "In 3-6 months", "Just exploring options"],
+      "timelineOptions": [
+        "As soon as possible",
+        "In 1-3 months",
+        "In 3-6 months",
+        "Just exploring options"
+      ],
       "message": "Briefly tell us about your situation (optional)"
     }
   },

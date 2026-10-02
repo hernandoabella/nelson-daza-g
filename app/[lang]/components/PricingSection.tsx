@@ -24,6 +24,7 @@ export function PricingSection({ dict, onBook }: { dict: Record<string, any>; la
             {p.badge && <div className="pricing-badge">{p.badge}</div>}
             <h3>{p.name}</h3>
             <div className="p-desc">{p.desc}</div>
+            {p.pricePrefix && <div className="price-prefix">{p.pricePrefix}</div>}
             <div className="price-amount"><span>$</span>{p.price.replace("$", "")}</div>
             <div className="price-unit">{p.unit}</div>
             <ul className="price-features">

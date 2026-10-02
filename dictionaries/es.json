@@ -47,12 +47,24 @@
   "about": {
     "label": "Sobre Nelson Daza",
     "title": "Formación internacional,\nenfoque local",
-    "p1": "Nelson Daza es un profesional colombiano especializado en asuntos internacionales, documentación legal y procesos migratorios para extranjeros que desean vivir, invertir, trabajar o establecer negocios en Colombia.",
-    "p2": "Cuenta con formación jurídica internacional obtenida en la Universidad RUDN Patrice Lumumba de Moscú, una de las universidades más reconocidas de Europa Oriental en relaciones internacionales y derecho. Su misión: facilitar la integración legal y migratoria de extranjeros en Colombia mediante una asesoría clara, profesional y personalizada.",
+    "p1": "Nelson Daza es un abogado colombiano, habilitado para ejercer el derecho en Colombia y titular de Tarjeta Profesional, especializado en asuntos internacionales, documentación legal y procesos migratorios para extranjeros que desean vivir, invertir, trabajar o establecer negocios en Colombia.",
+    "p2": "Cuenta con formación jurídica internacional obtenida en la Universidad RUDN Patrice Lumumba de Moscú, con experiencia en asuntos legales internacionales y documentación migratoria. Su misión es facilitar la integración legal y migratoria de extranjeros en Colombia mediante una asesoría clara, profesional y personalizada, acompañando a cada cliente durante las diferentes etapas de su proceso. Asesoría legal colombiana para extranjeros que quieren hacer de Colombia su nuevo hogar, destino de inversión o base para sus negocios.",
     "edu": [
-      { "icon": "🎓", "title": "Maestría en Derecho Internacional Público", "subtitle": "Universidad RUDN · Moscú, Rusia" },
-      { "icon": "⚖️", "title": "Pregrado en Derecho", "subtitle": "Universidad RUDN · Moscú, Rusia" },
-      { "icon": "🏛️", "title": "Estudios de Derecho", "subtitle": "Universidad del Magdalena · Santa Marta, CO" }
+      {
+        "icon": "🎓",
+        "title": "Maestría en Derecho Internacional Público",
+        "subtitle": "Universidad RUDN · Moscú, Rusia"
+      },
+      {
+        "icon": "⚖️",
+        "title": "Pregrado en Derecho",
+        "subtitle": "Universidad RUDN · Moscú, Rusia"
+      },
+      {
+        "icon": "🏛️",
+        "title": "Estudios de Derecho",
+        "subtitle": "Universidad del Magdalena · Santa Marta, CO"
+      }
     ],
     "langs": [
       "🇨🇴 Español — Nativo",
@@ -65,12 +77,42 @@
     "label": "Visas y Servicios",
     "title": "Soluciones migratorias\na tu medida",
     "items": [
-      { "num": "01", "name": "Visa M — Cónyuge de Colombiano", "desc": "Matrimonio legal con ciudadano colombiano. Incluye carta explicativa, evidencia de relación genuina y soportes de convivencia.", "fee": "USD 900 – 1,200" },
-      { "num": "02", "name": "Visa M — Compañero Permanente", "desc": "Unión marital demostrable con colombiano. La evidencia de convivencia es el aspecto más crítico del proceso.", "fee": "USD 1,000 – 1,400" },
-      { "num": "03", "name": "Visa V — Nómada Digital", "desc": "Para quienes trabajan remotamente para empresas extranjeras: programadores, diseñadores, consultores, creadores de contenido.", "fee": "USD 650 – 850" },
-      { "num": "04", "name": "Visa M — Pensionado", "desc": "Pensión vitalicia equivalente a 3 salarios mínimos colombianos. Ideal para jubilados de EE.UU., Canadá y Europa.", "fee": "USD 700 – 900" },
-      { "num": "05", "name": "Visa M — Inversionista Inmobiliario", "desc": "La más atractiva para Santa Marta. Inversión mínima: 350 salarios mínimos (~USD 95,000). Incluye registro Banco de la República.", "fee": "USD 1,500 – 3,000" },
-      { "num": "06", "name": "Residencia Permanente (Visa R)", "desc": "El producto premium. Por acumulación de tiempo, parentesco con colombiano o inversión directa de 650 salarios mínimos.", "fee": "USD 2,500 – 5,000" }
+      {
+        "num": "01",
+        "name": "Visa M — Cónyuge de Colombiano",
+        "desc": "Matrimonio legal con ciudadano colombiano. Incluye carta explicativa, evidencia de relación genuina y soportes de convivencia.",
+        "fee": "Desde USD $550"
+      },
+      {
+        "num": "02",
+        "name": "Visa M — Compañero Permanente",
+        "desc": "Unión marital demostrable con colombiano. La evidencia de convivencia es el aspecto más crítico del proceso.",
+        "fee": "Desde USD $600"
+      },
+      {
+        "num": "03",
+        "name": "Visa V — Nómada Digital",
+        "desc": "Para quienes trabajan remotamente para empresas extranjeras: programadores, diseñadores, consultores, creadores de contenido.",
+        "fee": "Desde USD $450"
+      },
+      {
+        "num": "04",
+        "name": "Visa M — Pensionado",
+        "desc": "Pensión vitalicia equivalente a 3 salarios mínimos colombianos. Ideal para jubilados de EE.UU., Canadá y Europa.",
+        "fee": "Desde USD $500"
+      },
+      {
+        "num": "05",
+        "name": "Visa M — Inversionista Inmobiliario",
+        "desc": "La más atractiva para Santa Marta. Inversión mínima: 350 salarios mínimos (~USD 95,000). Incluye registro Banco de la República.",
+        "fee": "Desde USD $850"
+      },
+      {
+        "num": "06",
+        "name": "Residencia Permanente (Visa R)",
+        "desc": "El producto premium. Por acumulación de tiempo, parentesco con colombiano o inversión directa de 650 salarios mínimos.",
+        "fee": "Desde USD $750"
+      }
     ]
   },
   "banner2": {
@@ -103,37 +145,39 @@
       {
         "name": "Visa M / V Completa",
         "desc": "Tramitación integral de visa",
-        "price": "$650+",
+        "price": "$650",
         "unit": "USD · Según tipo de visa",
         "badge": "Más solicitado",
         "features": [
-          "Cónyuge colombiano: $900–1,200",
-          "Compañero permanente: $1,000–1,400",
-          "Nómada digital: $650–850",
-          "Pensionado: $700–900",
-          "Empresa (socio): $1,500–2,500",
+          "Cónyuge de colombiano: Desde $550",
+          "Compañero permanente: Desde $600",
+          "Nómada digital: Desde $450",
+          "Pensionado: Desde $500",
+          "Socio / Inversionista: Desde $1,500",
           "Gestión completa de documentos"
         ],
         "note": "✦ Incluye consulta inicial descontada",
         "cta": "Consultar caso",
-        "featured": true
+        "featured": true,
+        "pricePrefix": "Desde"
       },
       {
         "name": "Residencia & Nacionalidad",
         "desc": "Producto premium · Visa R",
-        "price": "$2,000+",
+        "price": "$2,000",
         "unit": "USD · Según tipo de proceso",
         "features": [
-          "Residencia permanente (Visa R): $2,500–5,000",
-          "Nacionalidad colombiana: $2,000–4,000",
-          "Inversionista / empresario: $1,500–3,000",
+          "Residencia permanente (Visa R): Desde $750",
+          "Nacionalidad colombiana: Desde $2,000",
+          "Inversionista / empresario: Desde $1,500",
           "Análisis completo de elegibilidad",
           "Gestión y seguimiento del proceso",
           "Preparación y revisión de documentación"
         ],
         "note": "✦ Consulta inicial incluida y descontada",
         "cta": "Consultar",
-        "featured": true
+        "featured": true,
+        "pricePrefix": "Desde"
       },
       {
         "name": "Preparación de Expediente",
@@ -223,26 +267,72 @@
     "label": "Servicios Complementarios",
     "title": "Apoyo integral",
     "items": [
-      { "name": "Registro de Visa", "fee": "USD 250" },
-      { "name": "Cédula de Extranjería", "fee": "USD 350" },
-      { "name": "Renovación de Visa", "fee": "USD 700 – 1,500" },
-      { "name": "Cambio de Categoría", "fee": "USD 1,000 – 2,000" },
-      { "name": "Apertura de Empresa", "fee": "USD 1,500 – 3,500" },
-      { "name": "Registro Inversión Extranjera", "fee": "USD 1,000 – 2,500" },
-      { "name": "Due Diligence Inmobiliario", "fee": "USD 800 – 2,000" },
-      { "name": "Apertura Bancaria Extranjeros", "fee": "USD 500 – 1,500" },
-      { "name": "Traducción Inglés–Español", "fee": "Desde USD 35/página" },
-      { "name": "Traducción Ruso–Español", "fee": "Desde USD 50/página" }
+      {
+        "name": "Registro de Visa",
+        "fee": "USD 250"
+      },
+      {
+        "name": "Cédula de Extranjería",
+        "fee": "USD 350"
+      },
+      {
+        "name": "Renovación de Visa",
+        "fee": "USD 700 – 1,500"
+      },
+      {
+        "name": "Cambio de Categoría",
+        "fee": "USD 1,000 – 2,000"
+      },
+      {
+        "name": "Apertura de Empresa",
+        "fee": "USD 1,500 – 3,500"
+      },
+      {
+        "name": "Registro Inversión Extranjera",
+        "fee": "USD 1,000 – 2,500"
+      },
+      {
+        "name": "Due Diligence Inmobiliario",
+        "fee": "USD 800 – 2,000"
+      },
+      {
+        "name": "Apertura Bancaria Extranjeros",
+        "fee": "USD 500 – 1,500"
+      },
+      {
+        "name": "Traducción Inglés–Español",
+        "fee": "Desde USD 35/página"
+      },
+      {
+        "name": "Traducción Ruso–Español",
+        "fee": "Desde USD 50/página"
+      }
     ]
   },
   "process": {
     "label": "Cómo trabajamos",
     "title": "Cuatro pasos hacia tu objetivo",
     "steps": [
-      { "num": "I", "name": "Consulta Inicial", "desc": "Consulta gratuita de 15 min para dudas rápidas o consulta estratégica de 45–60 min con análisis completo." },
-      { "num": "II", "name": "Análisis Documental", "desc": "Revisión y preparación de todos los documentos necesarios según tu tipo de visa." },
-      { "num": "III", "name": "Presentación", "desc": "Radicación de la solicitud ante Cancillería o Migración Colombia con seguimiento activo." },
-      { "num": "IV", "name": "Acompañamiento", "desc": "Te guiamos hasta recibir tu visa, cédula de extranjería y más allá." }
+      {
+        "num": "I",
+        "name": "Consulta Inicial",
+        "desc": "Consulta gratuita de 15 min para dudas rápidas o consulta estratégica de 45–60 min con análisis completo."
+      },
+      {
+        "num": "II",
+        "name": "Análisis Documental",
+        "desc": "Revisión y preparación de todos los documentos necesarios según tu tipo de visa."
+      },
+      {
+        "num": "III",
+        "name": "Presentación",
+        "desc": "Radicación de la solicitud ante Cancillería o Migración Colombia con seguimiento activo."
+      },
+      {
+        "num": "IV",
+        "name": "Acompañamiento",
+        "desc": "Te guiamos hasta recibir tu visa, cédula de extranjería y más allá."
+      }
     ]
   },
   "testimonials": {
@@ -261,10 +351,26 @@
     "introTitle": "Reserva tu consulta",
     "intro": "Completa el formulario y nos comunicaremos contigo en menos de 24 horas para confirmar fecha, hora y método de pago. Toda la información es estrictamente confidencial.",
     "details": [
-      { "icon": "📍", "label": "Ubicación", "value": "Santa Marta, Colombia · Atención presencial y remota" },
-      { "icon": "📞", "label": "WhatsApp", "value": "+57 312 7323913" },
-      { "icon": "🌐", "label": "Idiomas de atención", "value": "Español · English · Русский · Français" },
-      { "icon": "🕐", "label": "Horario", "value": "Lun–Vie: 8:00–18:00 (GMT-5)" }
+      {
+        "icon": "📍",
+        "label": "Ubicación",
+        "value": "Santa Marta, Colombia · Atención presencial y remota"
+      },
+      {
+        "icon": "📞",
+        "label": "WhatsApp",
+        "value": "+57 312 7323913"
+      },
+      {
+        "icon": "🌐",
+        "label": "Idiomas de atención",
+        "value": "Español · English · Русский · Français"
+      },
+      {
+        "icon": "🕐",
+        "label": "Horario",
+        "value": "Lun–Vie: 8:00–18:00 (GMT-5)"
+      }
     ],
     "form": {
       "name": "Nombre",
@@ -302,12 +408,21 @@
     "title": "Elige tu tipo de consulta",
     "freeName": "Consulta Gratuita",
     "freeDesc": "15–20 min · Sin costo",
-    "freeBullets": ["Resuelve dudas rápidas", "Sin compromiso", "Sin pago requerido"],
+    "freeBullets": [
+      "Resuelve dudas rápidas",
+      "Sin compromiso",
+      "Sin pago requerido"
+    ],
     "freeCta": "Agendar gratis",
     "freeCalDesc": "Selecciona una fecha disponible para tu consulta gratuita con Nelson Daza.",
     "paidName": "Consulta Estratégica",
     "paidDesc": "45–60 min · $35 USD",
-    "paidBullets": ["Análisis completo de tu caso", "Revisión de documentos", "Estrategia migratoria", "Se descuenta si contratas"],
+    "paidBullets": [
+      "Análisis completo de tu caso",
+      "Revisión de documentos",
+      "Estrategia migratoria",
+      "Se descuenta si contratas"
+    ],
     "paidCta": "Agendar — $35 USD",
     "paidCalDesc": "Selecciona una fecha disponible. Al confirmar, Calendly te pedirá el pago de <strong>$35 USD</strong> para reservar tu cita."
   },
@@ -332,9 +447,24 @@
       "whatsapp": "WhatsApp",
       "nationality": "Nacionalidad actual",
       "visaType": "¿Qué tipo de visa te interesa?",
-      "visaOptions": ["No estoy seguro", "Visa M — Cónyuge/Compañero", "Visa V — Nómada Digital", "Visa M — Pensionado", "Visa M — Inversionista", "Visa M — Socio/Empresa", "Residencia Permanente (Visa R)", "Nacionalidad Colombiana", "Otro"],
+      "visaOptions": [
+        "No estoy seguro",
+        "Visa M — Cónyuge/Compañero",
+        "Visa V — Nómada Digital",
+        "Visa M — Pensionado",
+        "Visa M — Inversionista",
+        "Visa M — Socio/Empresa",
+        "Residencia Permanente (Visa R)",
+        "Nacionalidad Colombiana",
+        "Otro"
+      ],
       "timeline": "¿Cuándo planeas iniciar el proceso?",
-      "timelineOptions": ["Lo antes posible", "En 1-3 meses", "En 3-6 meses", "Solo estoy explorando opciones"],
+      "timelineOptions": [
+        "Lo antes posible",
+        "En 1-3 meses",
+        "En 3-6 meses",
+        "Solo estoy explorando opciones"
+      ],
       "message": "Cuéntanos brevemente tu situación (opcional)"
     }
   },
