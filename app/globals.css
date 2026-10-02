@@ -276,6 +276,10 @@ nav.scrolled .nav-links a:hover { color: var(--gold); }
   outline: 2px solid var(--gold-light);
   outline-offset: 3px;
 }
+.nav-cta {
+  font-size: 0.68rem;
+  padding: 11px 26px;
+}
 
 .btn-ghost {
   font-family: 'Inter', system-ui, sans-serif;
@@ -749,7 +753,11 @@ footer { background: #04182F; color: var(--white); border-top: 3px solid var(--g
   nav.scrolled { padding: 10px 16px; }
   .nav-links { display: none; }
   .nav-cta-wrap { gap: 8px; }
-  .nav-cta-wrap .nav-langs { display: none; }
+  .nav-logo-img { height: 48px; }
+  .nav-cta { font-size: 0.6rem; padding: 10px 12px; letter-spacing: 0.08em; }
+  .nav-langs { gap: 2px; }
+  .nav-lang-btn { font-size: 0.58rem; letter-spacing: 0.06em; padding: 6px 7px; }
+  .nav-lang-btn .lang-icon { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 36px; }
   .hero-content { padding: 110px 20px 60px; }
   section { padding: 72px 20px; }

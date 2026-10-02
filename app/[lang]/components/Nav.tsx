@@ -39,11 +39,7 @@ export function Nav({ dict, lang, onBook }: { dict: Record<string, any>; lang: s
               <img src="/ruso.png" className="lang-icon" alt="Русский" /> RU
             </button>
           </div>
-          <button
-            className="nav-cta btn-primary"
-            onClick={onBook}
-            style={{ padding: "11px 26px", fontSize: "0.68rem", border: "none", cursor: "pointer" }}
-          >
+          <button className="nav-cta btn-primary" onClick={onBook}>
             {dict.nav.cta}
           </button>
         </div>
