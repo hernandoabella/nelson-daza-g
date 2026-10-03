@@ -424,7 +424,8 @@
       "Se descuenta si contratas"
     ],
     "paidCta": "Agendar — $35 USD",
-    "paidCalDesc": "Selecciona una fecha disponible. Al confirmar, Calendly te pedirá el pago de <strong>$35 USD</strong> para reservar tu cita."
+"paidCalDesc": "Selecciona una fecha disponible para tu consulta estratégica.",
+    "paidPayNote": "El pago se realiza antes de agendar."
   },
   "booking": {
     "title": "Reservar Consulta Estratégica",
@@ -435,9 +436,13 @@
     "next": "Siguiente",
     "back": "Atrás",
     "payTitle": "Pago de Consulta",
-    "payDesc": "El valor de la consulta estratégica es de <strong>$35 USD</strong>. Una vez realizado el pago, podrás agendar tu cita en el calendario.",
-    "payBtn": "Pagar $35 USD — Tarjeta crédito/débito",
+    "payDesc": "El valor de la consulta estratégica es <strong>$35 USD</strong>. Una vez realizado el pago, podrás agendar tu cita.",
+    "payMethods": "Tarjeta internacional (Visa, Mastercard, Amex), PSE, Nequi o transferencia Bancolombia.",
+    "payBtn": "Pagar $35 USD",
     "payProcessing": "Procesando pago...",
+    "payUnavailable": "El pago en línea no está disponible en este momento.",
+    "payWidgetError": "No pudimos cargar el formulario de pago.",
+    "payFallbackCta": "Continuar por Calendly",
     "scheduleTitle": "Agenda tu cita",
     "scheduleDesc": "¡Pago confirmado! Selecciona la fecha y hora que mejor te acomode para tu consulta con Nelson Daza.",
     "close": "Cerrar",

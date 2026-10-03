@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { FaTimes, FaCheck } from "react-icons/fa"
 import { CALENDLY_FREE, CALENDLY_PAID } from "@/lib/config"
+import { WompiCheckout } from "./WompiCheckout"
 
 declare global {
   interface Window { Calendly?: any }
@@ -16,8 +17,12 @@ type BookingFlowProps = {
 
 export function BookingFlow({ dict, onClose }: BookingFlowProps) {
   const [selected, setSelected] = useState<"free" | "paid" | null>(null)
+  const [paid, setPaid] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const opts = dict.bookingOptions
+  const booking = dict.booking
+
+  const showScheduler = selected === "free" || (selected === "paid" && paid)
 
   useEffect(() => {
     document.body.style.overflow = "hidden"
@@ -25,7 +30,7 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
   }, [])
 
   useEffect(() => {
-    if (!selected || !containerRef.current) return
+    if (!showScheduler || !containerRef.current) return
 
     const el = containerRef.current
     el.innerHTML = ""
@@ -52,7 +57,7 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
       }, 200)
       return () => clearInterval(check)
     }
-  }, [selected])
+  }, [selected, showScheduler])
 
   return (
     <div
@@ -81,7 +86,11 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
         >
           <div>
             <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.3rem", fontWeight: 700, color: "var(--ink)", margin: 0 }}>
-              {selected ? (selected === "free" ? opts.freeName : opts.paidName) : opts.title}
+              {!selected
+              ? opts.title
+              : showScheduler
+                ? (selected === "free" ? opts.freeName : booking.scheduleTitle)
+                : booking.payTitle}
             </h3>
           </div>
           <button onClick={onClose} style={{ background: "none", border: "none", color: "var(--gray)", cursor: "pointer", fontSize: "1.2rem", padding: "8px" }}>
@@ -154,10 +163,24 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
                 </button>
               </div>
             </div>
+          ) : !showScheduler ? (
+            <div style={{ padding: "8px 0" }}>
+              <p style={{ fontSize: "0.95rem", color: "var(--ink3)", lineHeight: 1.7, maxWidth: "480px", margin: "0 auto 18px" }}
+                dangerouslySetInnerHTML={{ __html: booking.payDesc }}
+              />
+              <WompiCheckout
+                labels={booking}
+                onApproved={() => setPaid(true)}
+                onDeclined={() => {}}
+                fallbackToCalendly={() => setPaid(true)}
+              />
+            </div>
           ) : (
             <div style={{ textAlign: "center", padding: "10px 0" }}>
               <p style={{ fontSize: "0.95rem", color: "var(--ink3)", lineHeight: 1.7, maxWidth: "480px", margin: "0 auto 20px" }}
-                dangerouslySetInnerHTML={{ __html: selected === "free" ? opts.freeCalDesc : opts.paidCalDesc }}
+                dangerouslySetInnerHTML={{
+                  __html: selected === "free" ? opts.freeCalDesc : booking.scheduleDesc,
+                }}
               />
               <div ref={containerRef} style={{ minWidth: "320px", height: "580px", borderRadius: "8px", overflow: "hidden" }} />
             </div>
