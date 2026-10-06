@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true })
   }
 
-  if (!String(tx.reference ?? "").startsWith("CONS-") || tx.amount_in_cents !== CONSULT_AMOUNT_COP) {
+  if (tx.amount_in_cents !== CONSULT_AMOUNT_COP * 100) {
     console.warn(`[WOMPI] Transacción aprobada fuera de alcance: ${tx.reference} ${tx.amount_in_cents}`)
     return NextResponse.json({ ok: true })
   }

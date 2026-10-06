@@ -424,7 +424,7 @@
       "Deducted if you hire"
     ],
     "paidCta": "Book — $35 USD",
-"paidCalDesc": "Select an available date for your strategic consultation.",
+    "paidCalDesc": "Select an available date for your strategic consultation.",
     "paidPayNote": "Payment is made before scheduling."
   },
   "booking": {
@@ -443,6 +443,8 @@
     "payUnavailable": "Online payment is not available at the moment.",
     "payWidgetError": "We could not load the payment form.",
     "payFallbackCta": "Continue via Calendly",
+    "payOpenedNote": "Wompi opened in a new tab. Once your payment is complete, come back here and confirm below.",
+    "payDoneCta": "I've paid — schedule my appointment",
     "scheduleTitle": "Schedule your appointment",
     "scheduleDesc": "Payment confirmed! Select the date and time that works best for your consultation with Nelson Daza.",
     "close": "Close",
@@ -471,7 +473,9 @@
         "Just exploring options"
       ],
       "message": "Briefly tell us about your situation (optional)"
-    }
+    },
+    "payCryptoBtn": "Pay with crypto",
+    "payCryptoNote": "Pay with cryptocurrency via NOWPayments. Once your payment is complete, come back here and confirm below."
   },
   "disclaimer": "⚠️ Legal notice: Published fees correspond exclusively to professional services and do not include government fees, visa duties, official translations, apostilles, legalizations, insurance, taxes, notarial expenses or third-party costs. Approval or denial of any visa, residency or nationality is the exclusive competence of Colombian authorities. Each case is unique.",
   "blogPage": {

@@ -1,23 +1,7 @@
 import "server-only"
-import { createHash, randomBytes, timingSafeEqual } from "node:crypto"
+import { createHash, timingSafeEqual } from "node:crypto"
 
 const sha256Hex = (value: string) => createHash("sha256").update(value).digest("hex")
-
-export function generateReference(prefix = "CONS"): string {
-  const stamp = Date.now().toString(36).toUpperCase()
-  const salt = randomBytes(3).toString("hex").toUpperCase()
-  return `${prefix}-${stamp}-${salt}`
-}
-
-// https://docs.wompi.co/docs/colombia/widget-checkout-web/#paso-3-genera-una-firma-de-integridad
-export function createIntegritySignature(
-  reference: string,
-  amountInCents: number,
-  currency: string,
-  integritySecret: string,
-): string {
-  return sha256Hex(`${reference}${amountInCents}${currency}${integritySecret}`)
-}
 
 type WompiEvent = {
   event?: string

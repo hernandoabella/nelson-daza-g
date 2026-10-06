@@ -424,7 +424,7 @@
       "Se descuenta si contratas"
     ],
     "paidCta": "Agendar — $35 USD",
-"paidCalDesc": "Selecciona una fecha disponible para tu consulta estratégica.",
+    "paidCalDesc": "Selecciona una fecha disponible para tu consulta estratégica.",
     "paidPayNote": "El pago se realiza antes de agendar."
   },
   "booking": {
@@ -443,6 +443,8 @@
     "payUnavailable": "El pago en línea no está disponible en este momento.",
     "payWidgetError": "No pudimos cargar el formulario de pago.",
     "payFallbackCta": "Continuar por Calendly",
+    "payOpenedNote": "Se abrió Wompi en una pestaña nueva. Cuando termines de pagar, vuelve aquí y confirma abajo.",
+    "payDoneCta": "Ya pagué — agendar mi cita",
     "scheduleTitle": "Agenda tu cita",
     "scheduleDesc": "¡Pago confirmado! Selecciona la fecha y hora que mejor te acomode para tu consulta con Nelson Daza.",
     "close": "Cerrar",
@@ -471,7 +473,9 @@
         "Solo estoy explorando opciones"
       ],
       "message": "Cuéntanos brevemente tu situación (opcional)"
-    }
+    },
+    "payCryptoBtn": "Pagar con crypto",
+    "payCryptoNote": "Paga con criptomonedas a través de NOWPayments. Cuando termines, vuelve aquí y confirma abajo."
   },
   "disclaimer": "⚠️ Aviso legal: Los honorarios publicados corresponden exclusivamente a servicios profesionales y no incluyen tasas gubernamentales, derechos de visa, traducciones oficiales, apostillas, legalizaciones, seguros, impuestos, gastos notariales ni costos de terceros. La aprobación o negación de cualquier visa, residencia o nacionalidad es competencia exclusiva de las autoridades colombianas. Cada caso es único y será evaluado individualmente.",
   "blogPage": {

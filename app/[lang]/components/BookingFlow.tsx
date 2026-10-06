@@ -171,7 +171,6 @@ export function BookingFlow({ dict, onClose }: BookingFlowProps) {
               <WompiCheckout
                 labels={booking}
                 onApproved={() => setPaid(true)}
-                onDeclined={() => {}}
                 fallbackToCalendly={() => setPaid(true)}
               />
             </div>
