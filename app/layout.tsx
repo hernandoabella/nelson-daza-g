@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dazaimmigration.com"),
   title: "Nelson Daza — Миграционный адвокат",
   description: "Профессиональная миграционная поддержка для иностранцев в Колумбии",
 }
